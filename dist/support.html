@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="cleartype" content="on"/>
+
+    <title>Служба поддержки</title>
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/style-skin.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/scripts/jquery.qtip/jquery.qtip.css" />
+    <script type="text/javascript" src="assets/scripts/jquery.qtip/jquery.qtip.js"></script>
+    <script src="assets/scripts/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/scripts/magnific-popup/magnific-popup.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/inputmask/phone-codes/phone.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').select2({
+          placeholder: 'Нужно выбрать вариант',
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          dropdownAutoWidth : true
+        });
+        moment.locale('ru');
+        $('input[name="daterange"]').daterangepicker({
+          "startDate": "09/8/2017",
+          "endDate": "10/04/2017",
+          locale: {
+            cancelLabel: 'Сбросить',
+            applyLabel: 'Применить'
+          }
+        });
+        $('a').qtip({
+          style: { classes: 'qtip-light qtip-rounded' }
+        });
+      });
+    </script>
+
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="info">
+          <a href="./" class="info__link">
+            <span><i class="f-ico i-info"></i></span>
+          </a>
+        </div>
+        <nav class="user">
+          <ul class="user-menu">
+
+            <li class="user-menu__item">
+              <a class="user-menu__link message" href="support3.html" title="Для вас есть новые сообщения и уведомления">
+                <span class="user-menu__icon"><i class="f-ico i-message"></i><span class="label">у вас есть новые уведомления</span></span>
+                <span class="user-menu__text">Техническая поддержка</span>
+              </a>
+            </li>
+
+            <li class="user-menu__item">
+              <a class="user-menu__link user" href="settings-account.html">
+                <span class="user-menu__text">moof37@yandex.ru</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="project-header">
+
+      <div class="project">
+        <div class="project-icon">
+          <img src="assets/images/getsale-icon.png" alt="">
+        </div><!-- /.project-icon -->
+        <div class="project-name" title="GetSale">
+          <span>GetSale</span>
+        </div><!-- /.project-name -->
+        <div class="project-geography" title="Москва, Московская область">
+          <span>Москва, Московская область</span>
+        </div><!-- /.project-geography -->
+      </div><!-- /.project -->
+
+      <div class="balance">
+
+        <div class="balance-project">
+          <a href="finance-statistics.html" title="Откроется финансовая статистика">
+            <div class="balance-value">
+              <span>8&nbsp;782.40&nbsp;&#8381;</span>
+            </div><!-- /.balance-value -->
+            <div class="balance-time">
+              <span>Хватит на 15 дней</span>
+            </div><!-- /.balance-time -->
+          </a>
+        </div><!-- /.balance-project -->
+        <div class="recharge">
+          <a href="pay-and-start.html" class="btn btn-outline">Пополнить счёт</a>
+        </div><!-- /.recharge -->
+      </div><!-- /.balance -->
+
+    </div><!-- /.project-header -->
+
+    <div class="project-tabs">
+
+      <ul class="project-nav">
+
+        <li class="project-nav__item ">
+          <a href="statistics.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-statistics"></i></span>
+            <span class="project-nav__text">Статистика <span class="badge badge--orange" title="Новых событий в статистике">99+</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="keywords.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-loupe"></i></span>
+            <span class="project-nav__text">Ключевые слова</span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="recommendation.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-recommendation"></i></span>
+            <span class="project-nav__text">Рекомендации <span class="badge badge--orange" title="Новых рекомендаций для ваших кампаний">9</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="settings-full.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-settings"></i></span>
+            <span class="project-nav__text">Настройки</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div><!-- /.project-tabs -->
+
+    <div class="main">
+      <div class="wrapper">
+        <div class="content">
+          <h2>Служба поддержки</h2>
+        </div>
+
+        <div class="support-page">
+
+          <form action="" class="support-form">
+            <div class="support-subject">
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="form-group">
+                    <label for="">Выберите тему вопроса</label>
+                    <div class="select select-support-subject">
+                      <select class="form-control">
+                        <option value="1">Техническая поддержка</option>
+                        <option value="2">Финансовый отдел</option>
+                        <option value="3">Наполнение сайта</option>
+                        <option value="4">Персональный менеджер</option>
+                        <option value="5">Контекстная реклама</option>
+                        <option value="7">Статейное продвижение</option>
+                        <option value="8">Трафиковое продвижение</option>
+                        <option value="9">Контент-маркетинг</option>
+                      </select>
+                    </div><!-- /.select -->
+                  </div><!-- /.form-group -->
+                </div>
+              </div>
+
+            </div><!-- /.support-subject -->
+          </form>
+
+        </div><!-- /.content -->
+      </div><!-- /.wrapper -->
+    </div><!-- /.main -->
+
+  </body>
+</html>

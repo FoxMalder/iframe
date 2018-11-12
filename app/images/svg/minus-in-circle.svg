@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>minus-in-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="minus-in-circle" transform="translate(0.000000, -1.000000)" fill-rule="nonzero" fill="#000000">
+            <path d="M11,22.999 C4.925,22.999 0,18.074 0,12 C0,5.924 4.925,0.999 11,0.999 C17.075,0.999 22,5.924 22,12 C22,18.074 17.075,22.999 11,22.999 Z M11,2.999 C6.029,2.999 2,7.028 2,11.999 C2,16.97 6.029,20.999 11,20.999 C15.97,20.999 20,16.97 20,11.999 C20,7.028 15.97,2.999 11,2.999 Z M6,12.999 L6,11 L16,11 L16,12.999 L6,12.999 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

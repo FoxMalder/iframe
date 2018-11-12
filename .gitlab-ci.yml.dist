@@ -1,0 +1,41 @@
+image: gitlab.finotdel.org:34567/integra/integra
+
+variables:
+  DEV0_PRODUCT_NAME: "iframe-static"
+  DEV0_PATH: "/var/www"
+  DEV0_HOST: "dev0.static.seopult.org"
+
+stages:
+  - build
+  - deploy
+
+cache:
+  key: "$DEV0_PRODUCT_NAME-$CI_COMMIT_REF_NAME"
+  untracked: true
+
+before_script:
+  - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+
+build:
+  stage: build
+  script:
+    - npm i && npm one
+    - ssh $SSH_USER@$SSH_HOST "mkdir -p ~/builds/$DEV0_PRODUCT_NAME/$CI_COMMIT_REF_NAME"
+    - rsync -a --delete --exclude-from 'build/exclude-list.txt' ./ $SSH_USER@$SSH_HOST:~/builds/$DEV0_PRODUCT_NAME/$CI_COMMIT_REF_NAME
+  tags:
+    - integra
+
+deploy:
+  variables:
+    GIT_STRATEGY: none
+  stage: deploy
+  cache:
+    policy: pull
+  script:
+    - ssh $SSH_USER@$SSH_HOST "sudo /usr/bin/rsync -rog --chown=www-data:www-data /home/$SSH_USER/builds/$DEV0_PRODUCT_NAME/$CI_COMMIT_REF_NAME/ $DEV0_PATH/$DEV0_HOST"
+  only:
+    - master
+  environment:
+    name: staging
+  tags:
+    - integra

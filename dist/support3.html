@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="cleartype" content="on"/>
+
+    <title>Служба поддержки</title>
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/style-skin.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/scripts/jquery.qtip/jquery.qtip.css" />
+    <script type="text/javascript" src="assets/scripts/jquery.qtip/jquery.qtip.js"></script>
+    <script src="assets/scripts/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/scripts/magnific-popup/magnific-popup.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/inputmask/phone-codes/phone.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').select2({
+          placeholder: 'Нужно выбрать вариант',
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          dropdownAutoWidth : true
+        });
+        moment.locale('ru');
+        $('input[name="daterange"]').daterangepicker({
+          "startDate": "09/8/2017",
+          "endDate": "10/04/2017",
+          locale: {
+            cancelLabel: 'Сбросить',
+            applyLabel: 'Применить'
+          }
+        });
+        $('a').qtip({
+          style: { classes: 'qtip-light qtip-rounded' }
+        });
+      });
+    </script>
+
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="info">
+          <a href="./" class="info__link">
+            <span><i class="f-ico i-info"></i></span>
+          </a>
+        </div>
+        <nav class="user">
+          <ul class="user-menu">
+
+            <li class="user-menu__item">
+              <a class="user-menu__link message" href="support3.html" title="Для вас есть новые сообщения и уведомления">
+                <span class="user-menu__icon"><i class="f-ico i-message"></i><span class="label">у вас есть новые уведомления</span></span>
+                <span class="user-menu__text">Техническая поддержка</span>
+              </a>
+            </li>
+
+            <li class="user-menu__item">
+              <a class="user-menu__link user" href="settings-account.html">
+                <span class="user-menu__text">moof37@yandex.ru</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="project-header">
+
+      <div class="project">
+        <div class="project-icon">
+          <img src="assets/images/getsale-icon.png" alt="">
+        </div><!-- /.project-icon -->
+        <div class="project-name" title="GetSale">
+          <span>GetSale</span>
+        </div><!-- /.project-name -->
+        <div class="project-geography" title="Москва, Московская область">
+          <span>Москва, Московская область</span>
+        </div><!-- /.project-geography -->
+      </div><!-- /.project -->
+
+      <div class="balance">
+
+        <div class="balance-project">
+          <a href="finance-statistics.html" title="Откроется финансовая статистика">
+            <div class="balance-value">
+              <span>8&nbsp;782.40&nbsp;&#8381;</span>
+            </div><!-- /.balance-value -->
+            <div class="balance-time">
+              <span>Хватит на 15 дней</span>
+            </div><!-- /.balance-time -->
+          </a>
+        </div><!-- /.balance-project -->
+        <div class="recharge">
+          <a href="pay-and-start.html" class="btn btn-outline">Пополнить счёт</a>
+        </div><!-- /.recharge -->
+      </div><!-- /.balance -->
+
+    </div><!-- /.project-header -->
+
+    <div class="project-tabs">
+
+      <ul class="project-nav">
+
+        <li class="project-nav__item ">
+          <a href="statistics.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-statistics"></i></span>
+            <span class="project-nav__text">Статистика <span class="badge badge--orange" title="Новых событий в статистике">99+</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="keywords.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-loupe"></i></span>
+            <span class="project-nav__text">Ключевые слова</span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="recommendation.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-recommendation"></i></span>
+            <span class="project-nav__text">Рекомендации <span class="badge badge--orange" title="Новых рекомендаций для ваших кампаний">9</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="settings-full.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-settings"></i></span>
+            <span class="project-nav__text">Настройки</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div><!-- /.project-tabs -->
+
+    <div class="main">
+      <div class="wrapper">
+        <div class="content">
+          <h2>Не работают SEO ссылки</h2>
+        </div>
+
+        <div class="support-page">
+
+          <form action="" class="support-form">
+            <div class="form-group form-group--border">
+              <textarea class="form-control" id="commentnew" rows="5" placeholder="Ваше сообщение"></textarea>
+            </div><!-- /.form-group -->
+            <div class="form-actions">
+              <button type="submit" class="btn btn-blue">Отправить</button>
+              <div class="form-inline">
+                <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} файла будет загружено" multiple />
+                <label for="file-3">
+                  <span class="attach-icon"><i class="f-ico i-attach"></i></span>
+                  <span>Прикрепить фаил&hellip;</span>
+                </label>
+              </div><!-- /.form-inline -->
+            </div><!-- /.form-actions -->
+          </form>
+
+          <div class="support-dialogs">
+
+            <div class="support-dialogs__item">
+
+              <div class="support-dialog">
+                <div class="userpic">
+                  <div class="userpic-box">
+                    <span><i class="f-ico i-lifevest"></i></span>
+                  </div><!-- /.userpic-box -->
+                </div><!-- /.userpic -->
+                <div class="dialog-message">
+                  <div class="dialog-message__text">Ты влюблён в своё ремесло. Господь тебя спаси, ты влюблён! А это проклятье. Это клеймо на лбу, выставленное на всеобщее обозрение. Ты не можешь жить без своей работы, и они об этом знают, и ещё знают, что тут-то ты и попался! Ты когда-нибудь приглядывался к людям на улице? Я приглядывался. Они проходят мимо тебя, все в шляпах, со свёртками… Но не в этом их суть. А суть их в том, что они ненавидят каждого, кто влюблён в своё ремесло. Более того, они их боятся, уж не знаю почему. Ты им подставляешься, Рорк, всем и каждому!</div><!-- /.dialog-text -->
+                  <div class="dialog-message__date"><span>25 марта 13:47</span></div><!-- /.dialog-date -->
+                </div><!-- /.dialog-message -->
+              </div><!-- /.support-dialog -->
+
+            </div><!-- /.support-dialogs__item -->
+
+            <div class="support-dialogs__item">
+
+              <div class="support-dialog support-dialog--user">
+                <div class="userpic">
+                  <div class="userpic-box">
+                    <span><i class="f-ico i-lifevest"></i></span>
+                  </div><!-- /.userpic-box -->
+                </div><!-- /.userpic -->
+                <div class="dialog-message dialog-message--user">
+                  <div class="dialog-message__text">Ты влюблён в своё ремесло. Господь тебя спаси, ты влюблён! А это проклятье. Это клеймо на лбу, выставленное на всеобщее обозрение. Ты не можешь жить без своей работы, и они об этом знают, и ещё знают, что тут-то ты и попался! Ты когда-нибудь приглядывался к людям на улице? Я приглядывался. Они проходят мимо тебя, все в шляпах, со свёртками… Но не в этом их суть. А суть их в том, что они ненавидят каждого, кто влюблён в своё ремесло. Более того, они их боятся, уж не знаю почему. Ты им подставляешься, Рорк, всем и каждому!</div><!-- /.dialog-text -->
+                  <div class="dialog-message__attachment">
+                    <div class="attachment">
+                      <div class="attachment-box">
+                        <a href="#" target="_blank" title="Откроется в новом окне">
+                          <img src="assets/images/support/support3-demo1.png" alt="">
+                        </a>
+                      </div>
+                      <div class="attachment-box">
+                        <a href="#" target="_blank" title="Откроется в новом окне">
+                          <img src="assets/images/support/support3-demo2.png" alt="">
+                        </a>
+                      </div>
+                    </div><!-- /.attachment -->
+                  </div><!-- /.dialog-message__attachment -->
+                  <div class="dialog-message__date"><span>25 марта 13:47</span></div><!-- /.dialog-date -->
+                </div><!-- /.dialog-message -->
+              </div><!-- /.support-dialog -->
+
+            </div><!-- /.support-dialogs__item -->
+
+
+            <div class="support-dialogs__item">
+
+              <div class="support-dialog">
+                <div class="userpic">
+                  <div class="userpic-box">
+                    <span><i class="f-ico i-lifevest"></i></span>
+                  </div><!-- /.userpic-box -->
+                </div><!-- /.userpic -->
+                <div class="dialog-message">
+                  <div class="dialog-message__text">У получающих жизнь из вторых рук нет чувства реальности. Их реальность не в них, а где-то в пространстве, которое разделяет человеческие тела. Они существуют не как реальное нечто, а как соотношение между ничто и ничто.</div><!-- /.dialog-text -->
+                  <div class="dialog-message__date"><span>25 марта 13:47</span></div><!-- /.dialog-date -->
+                </div><!-- /.dialog-message -->
+              </div><!-- /.support-dialog -->
+
+            </div><!-- /.support-dialogs__item -->
+
+          </div><!-- /.support-dialogs -->
+
+        </div><!-- /.content -->
+      </div><!-- /.wrapper -->
+    </div><!-- /.main -->
+    <script src="assets/scripts/scripts.js"></script>
+
+  </body>
+</html>

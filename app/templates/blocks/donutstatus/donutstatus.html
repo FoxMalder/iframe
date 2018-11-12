@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<style>
+  .donuts-demo {
+    padding: 60px 40px 22px 40px
+  }
+
+  .donuts-demo .row {
+    margin-bottom: 45px;
+  }
+
+  .demo-info {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 4px;
+    color: #445365;
+  }
+
+  code:not([class]),
+  tt:not([class]) {
+    background: #fff;
+    border: 1px solid #fafafa;
+    color: #cb3716;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 0.85em;
+  }
+</style>
+
+
+<div class="donuts-demo">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs">
+
+        <div class="first donut">
+          <div class="donut_type">100</div>
+        </div>
+        <div class="demo-info">Запущен SEO+PPC</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="second donut">
+          <div class="donut_type">50</div>
+        </div>
+        <div class="demo-info">Запущен SEO</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="third donut">
+          <div class="donut_type">50</div>
+        </div>
+        <div class="demo-info">Запущен PPC</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="forth donut">
+          <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+        </div>
+        <div class="demo-info">Запущено всё, но в PPC есть проблема</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="fifth donut">
+          <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+        </div>
+        <div class="demo-info">Запущено только PPC с проблемой</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="six donut">
+          <div class="donut_type donut_type--icon"><i class="f-ico i-pause gray"></i></div>
+        </div>
+        <div class="demo-info">Остановлено пользователем</div>
+
+      </div><!-- /.col-xs -->
+
+    </div>
+
+    <div class="row">
+      <div class="col-xs">
+
+        <div class="first donut donut--blur">
+          <div class="donut_type">100</div>
+        </div>
+        <div class="demo-info">Запущен SEO+PPC</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="second donut donut--blur">
+          <div class="donut_type">50</div>
+        </div>
+        <div class="demo-info">Запущен SEO</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="third donut donut--blur">
+          <div class="donut_type">50</div>
+        </div>
+        <div class="demo-info">Запущен PPC</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="forth donut donut--blur">
+          <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+        </div>
+        <div class="demo-info">Запущено всё, но в PPC есть проблема</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="fifth donut donut--blur">
+          <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+        </div>
+        <div class="demo-info">Запущено только PPC с проблемой</div>
+
+      </div><!-- /.col-xs -->
+
+      <div class="col-xs">
+
+        <div class="six donut donut--blur">
+          <div class="donut_type donut_type--icon"><i class="f-ico i-pause gray"></i></div>
+        </div>
+        <div class="demo-info">Остановлено пользователем</div>
+
+      </div><!-- /.col-xs -->
+
+    </div>
+
+    <div class="row">
+      <div class="col-xs">
+        <h1>Как оно всё устроено</h1>
+        <p>Булики статуса строятся через <code>canvas</code> плагинм <a href="http://kottenator.github.io/jquery-circle-progress/" target="_blank">kottenator.github.io/jquery-circle-progress/</a>. Файл самого плагина расположен в <code>app/scripts/progress.js</code>.</p>
+        <p>Документация плагина <a href="https://github.com/kottenator/jquery-circle-progress" target="_blank">расположена на ГитХабе</a>.</p>
+        <div class="row">
+          <div class="col-xs">
+            <p>Пример для третьего пончика в первой строке:</p>
+            <div class="code">
+              <pre><code class="html">&lt;div class="third donut"&gt;<br />  &lt;div class="donut_type"&gt;50&lt;/div&gt;<br />&lt;/div&gt;</code></pre>
+            </div><!-- /.code -->
+          </div>
+          <div class="col-xs">
+            <p>Пример JS-кода для третьего пончика в первой строке:</p>
+            <div class="code">
+              <pre><code class="js">$('.third.donut').donutProgress({<br />  value: .5,<br />  animation: false,<br />  fill: '#2688eb',<br />  startAngle: -Math.PI / 4 * -2<br />});</code></pre>
+            </div><!-- /.code -->
+          </div>
+          <div class="col-xs">
+            <p>Общее глобальное правило для настройки размеров, толщины основных линий, анимации и угла поворота для точки старта:</p>
+            <div class="code">
+              <pre><code class="js">$('.donut').donutProgress({<br />  size: 50,<br />  animation: false,<br />  thickness: 5,<br />  startAngle: -Math.PI / 4 * 2<br />});</code></pre>
+            </div><!-- /.code -->
+          </div>
+        </div>
+        <p><strong>Важно</strong>: предложенные варианты классов для разделения примеров типа <code>.first</code>, <code>.second</code>, <code>.third</code>, <code>.forth</code> не являются истинными! Я использовал их только в качестве примеров.</p>
+        <p>Вторая строка — это неактивные элементы. Им просто добавляется прозрачность классом <code>.donut--blur</code>.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

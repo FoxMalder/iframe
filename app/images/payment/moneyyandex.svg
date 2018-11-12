@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="46" height="60" viewBox="0 0 46 60">
+  <defs>
+    <style>
+      .moneyyandex-1 {
+        fill: #fc0;
+      }
+
+      .moneyyandex-1, .moneyyandex-2, .moneyyandex-3 {
+        fill-rule: evenodd;
+      }
+
+      .moneyyandex-2 {
+        fill: #d6ab05;
+      }
+
+      .moneyyandex-3 {
+        fill: #030303;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M0.001,29.763 C0.001,26.393 0.285,24.255 7.319,19.047 C13.141,14.735 31.805,-0.000 31.805,-0.000 L31.805,24.598 L45.999,24.598 L45.999,60.000 L4.434,60.000 C1.996,60.000 -0.000,58.020 -0.000,55.601 L0.001,29.763 Z" class="moneyyandex-1"/>
+    <path d="M31.805,24.598 L31.805,38.850 L5.724,56.477 L38.699,45.833 L38.699,24.598 L31.805,24.598 Z" class="moneyyandex-2"/>
+    <path d="M19.887,23.860 C21.412,22.058 23.640,21.421 24.863,22.439 C26.086,23.457 25.841,25.745 24.316,27.548 C22.792,29.350 20.563,29.986 19.340,28.968 C18.117,27.950 18.362,25.663 19.887,23.860 " class="moneyyandex-3"/>
+  </g>
+</svg>

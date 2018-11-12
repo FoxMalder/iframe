@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="cleartype" content="on"/>
+
+    <title>UI, иконки и типовая текстовая страница</title>
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="assets/scripts/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/scripts/magnific-popup/magnific-popup.css">
+
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+  </head>
+
+  <body>
+    <header class="header header--orange">
+      <div class="header-box">
+        <div class="info">
+          <a href="./" class="info__link">
+            <span><i class="f-ico i-info"></i></span>
+          </a>
+          <div class="info__text">Ограниченный доступ <a href="">выйти</a></div>
+        </div>
+        <div class="window-size">
+          <div class="form-group"><input type="text" class="form-control" placeholder="800px"></div>
+          <div class="form-group-divider">&#215;</div>
+          <div class="form-group"><input type="text" class="form-control" placeholder="600px"></div>
+        </div>
+        <nav class="user">
+          <ul class="user-menu">
+
+            <li class="user-menu__item">
+              <a class="user-menu__link message" href="support3.html" title="Для вас есть новые сообщения и уведомления">
+                <span class="user-menu__icon"><i class="f-ico i-message"></i><span class="label">у вас есть новые уведомления</span></span>
+                <span class="user-menu__text">Техническая поддержка</span>
+              </a>
+            </li>
+
+            <li class="user-menu__item">
+              <a class="user-menu__link user" href="settings-account.html">
+                <span class="user-menu__text">moof37@yandex.ru</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+      .icon-page {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .demo-ico__item {
+        display: flex;
+        margin-bottom: 15px;
+        text-align: left;
+        align-items: center;
+      }
+      .demo-ico__box {
+        margin-right: 15px;
+        flex-basis: 40px;
+        text-align: center;
+      }
+      .demo-ico__box {
+        fill: #fff;
+      }
+      .header {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .group {
+        margin-bottom: 25px;
+      }
+      .group p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 30px;
+      }
+
+      .ui-page {
+        background-color: #fff;
+        padding: 42px 40px 22px 40px;
+        display: block;
+      }
+      .demo-ui {
+        margin-bottom: 40px;
+      }
+      .demo-ui .element {
+        margin-bottom: 5px;
+      }
+      .text-page {
+        background-color: #fff;
+        padding: 22px 40px 22px 40px;
+        display: block;
+      }
+
+      ul.list,
+      ol.list {
+        margin-bottom: 1em;
+        padding-left: 0;
+      }
+      ul.list li,
+      ol.list li {
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+      }
+      ul.list li li,
+      ol.list li li {
+        margin-bottom: 0.5em;
+      }
+      ul.list {
+        list-style-type: none;
+      }
+      ul.list > li {
+        margin-left: 1em;
+        text-indent: -1.55em;
+        padding-left: 1.5em;
+      }
+      ul.list > li:before {
+        content: '\2014\a0\a0';
+      }
+      ul.list.list-short li {
+        margin: 0.1em 0 0.1em 0em;
+        color: #445365;
+      }
+      ul.list.list-short li:before {
+        display: none;
+        visibility: hidden;
+      }
+      ol.list > li {
+        margin-left: 2.5em;
+      }
+      li ul.list,
+      li ol.list {
+        margin: 0.3em 0 0.5em;
+        text-indent: 0;
+      }
+      code:not([class]),
+      tt:not([class]) {
+        background: #fff;
+        border: 1px solid #fafafa;
+        color: #cb3716;
+        border-radius: 3px;
+        padding: 2px 5px;
+        font-size: 0.85em;
+      }
+
+      h1, .h1 {
+        font-size: 33px;
+        line-height: 36px;
+        margin-top: 18px;
+        margin-bottom: 36px;
+        font-weight: 400;
+      }
+      h2, .h2 {
+        font-size: 25px;
+        line-height: 36px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-weight: 400;
+      }
+      h3, .h3 {
+        font-size: 19px;
+        line-height: 36px;
+        margin-top: 18px;
+        margin-bottom: 0px;
+        font-weight: 400;
+      }
+      h4, .h4 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 18px;
+        margin-bottom: 0px;
+        font-weight: 500;
+      }
+      h5, .h5 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 18px;
+        margin-bottom: 0px;
+        font-weight: 500;
+      }
+      hr, .hr {
+        border: 1px solid;
+        margin: -1px 0;
+      }
+      sub, sup {
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sup {
+        top: -0.5em;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      p {
+        line-height: 22px;
+        margin-top: 0px;
+        margin-bottom: 18px;
+      }
+      p.lead {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #737e8c;
+      }
+      .highlighted {
+        background: #ff8a01;
+        color: #fff;
+        padding-right: 0.25em;
+        padding-left: 0.25em;
+        border-radius: 3px;
+      }
+      .comment p {
+        padding: 0;
+        color: #445365;
+        font-style: italic;
+      }
+      .important {
+        border-top: 3px solid #ba1a0e;
+        position: relative;
+        padding: 5px 0 0 35px;
+        margin: 1em 0;
+        overflow: hidden;
+      }
+      .important:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 29px;
+        height: 40px;
+      }
+      .important h2,
+      .important h3,
+      .important h4 {
+        color: #ba1a0e;
+      }
+      .important h2:first-child,
+      .important h3:first-child,
+      .important h4:first-child {
+        margin: 0 0 5px;
+      }
+      .important p {
+        margin-top: 1px;
+      }
+      .foldable__control .foldable__link {
+        position: relative;
+      }
+      .foldable__control .foldable__link:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 5px solid;
+        border-right: 4px dashed transparent;
+        border-left: 4px dashed transparent;
+        border-width: 5px 4px 0;
+        margin: 0 -8px 0 0;
+        position: relative;
+        top: 14px;
+        left: 4px;
+        transition: 0s ease;
+      }
+      .foldable__control.unfolded .foldable__link:after {
+        top: -10px;
+        border-width: 0 4px 5px;
+      }
+      blockquote {
+        display:block;
+        background: #fff;
+        padding: 10px 10px 10px 20px;
+        margin: 0 0 20px;
+        position: relative;
+        font-style: italic;
+        border-left: 0.25rem solid rgb(38, 136, 235);
+      }
+      blockquote footer {
+        color: rgb(195, 200, 204);
+        font-style: normal;
+        font-size: 12px;
+      }
+    </style>
+    <div class="ui-page">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="demo-ui">
+              <div class="element">
+
+                <div class="form-group">
+                  <div class="status-form-control">
+                    <input type="text" id="ui-email" class="form-control" placeholder="email" value="moof37@ya">
+                    <div class="status-form-control-type" aria-hidden="true">
+                      <div class="loader"></div><!-- /.loader -->
+                    </div><!-- /.status-form-control-type -->
+                    <div class="help-text text-red">&nbsp;</div>
+                  </div><!-- /.status-form-control -->
+                </div><!-- /.form-group -->
+
+              </div><!-- /.element -->
+              <div class="code">
+                <pre><code class="html"></code></pre>
+              </div><!-- /.code -->
+            </div><!-- /.demo-ui -->
+
+          </div>
+
+          <div class="col-xs-6">
+            <div class="demo-ui">
+              <div class="element">
+
+                <div class="form-group form-group--error">
+                  <div class="status-form-control">
+                    <input type="text" id="ui-email" class="form-control" placeholder="email" value="moof37@yandex.-ru">
+                    <div class="status-form-control-type" aria-hidden="true">
+                      <i class="f-ico i-shout"></i>
+                    </div><!-- /.status-form-control-type -->
+                    <div class="help-text text-red">Некорректный email</div>
+                  </div><!-- /.form-group__status -->
+                </div><!-- /.form-group -->
+
+              </div><!-- /.element -->
+            </div><!-- /.demo-ui -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- /.up-page -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+      $('.form-group.form-group--error').click(function(){
+        console.log('sdgffg');
+        $('.help-text').fadeIn('300');
+      });
+    </script>
+
+  </body>
+</html>

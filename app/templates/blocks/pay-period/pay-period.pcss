@@ -1,0 +1,128 @@
+.f-plans-page {
+  h1 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.pay-periods {
+  display: flex;
+  background-color: white;
+  border-radius: 2px;
+  justify-content: center;
+  width: 960px;
+  margin: 40px auto;
+  &__item {
+    border: 1px solid #e9eff0;
+    border-right: 0;
+    &:last-child {
+      border-right: 1px solid #e9eff0;
+    }
+  }
+}
+
+.pay-period {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 29px;
+  text-align: center;
+  &__header {
+    padding: 27px 50px;
+    background-color: #f7fafa;
+    box-shadow: 0 1px 0 #e9eff0;
+    &-time {
+      color: #2c3133;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &-costs {
+      color: #2c3133;
+      font-family: Arial;
+      font-size: 14px;
+      line-height: 32px;
+      .select .select2-container--default .select2-selection--single {
+        height: 30px;
+      }
+      .select .select2-container--default .select2-selection--single .select2-selection__rendered {
+        height: 30px;
+        line-height: 20px;
+      }
+      .select .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 29px;
+      }
+    }
+  }
+  &__discount {
+    padding: 20px 0;
+    color: #42cc05;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 30px;
+    flex-basis: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    span {
+      display: block;
+    }
+    &&--no {
+      color: #c3c8cc;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      bottom: 10px;
+      width: 120px;
+      height: 1px;
+      background-color: rgb(233, 239, 240);
+    }
+  }
+  &__cost {
+    margin-top: auto;
+    &-time {
+      color: #2c3133;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    &-value {
+      color: #2c3133;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+  &__btn {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width : 100px) and (max-width : 999px) {
+  .pay-periods {
+    width: 100%;
+  }
+  .pay-period {
+    padding-bottom: 20px;
+  }
+  .pay-period__header {
+    padding: 15px 25px;
+  }
+  .pay-period__discount {
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  .pay-period__btn {
+    padding-top: 15px;
+  }
+}

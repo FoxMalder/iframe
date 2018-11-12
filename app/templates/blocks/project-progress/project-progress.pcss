@@ -1,0 +1,70 @@
+.project-progress {
+  background-color: rgb(233, 239, 240);
+  display: flex;
+  padding: 20px 40px 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  &__step {
+    min-width: 255px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    &&--youhere {
+      .project-progress-name {
+        color: #2c3133;
+      }
+      .project-progress-counter {
+        border-color: #42cc05;
+        color: #42cc05;
+        span {
+          background-image: none;
+          top: -2px;
+          left: 5px;
+          size: auto auto;
+          text-indent: initial;
+        }
+      }
+    }
+  }
+  &-counter {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #c3c8cc;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 18px;
+    color: #c3c8cc;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    span {
+      text-align: center;
+      position: absolute;
+      background-image: svg-load('check-small.svg', fill=#c3c8cc);
+      size: 12px 9px;
+      top: 5px;
+      left: 3px;
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+  &-name {
+    color: #c3c8cc;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width : 100px) and (max-width : 999px) {
+  .project-progress {
+    padding: 15px 15px 15px 15px;
+    &__step {
+      min-width: auto;
+    }
+  }
+}

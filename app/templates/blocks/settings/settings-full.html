@@ -1,0 +1,715 @@
+<div class="main">
+  <div class="wrapper">
+    <div class="content">
+      <h2>Настройки работы системы</h2>
+    </div><!-- /.content -->
+    <div class="settings-list">
+      <div class="foldable">
+
+        <div class="foldable__item">
+          <div class="foldable-box foldable-box--expand">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Стратегия привлечения посетителей</span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content">
+              <div class="row">
+                <div class="col-xs">
+
+                  <div class="type-select">
+                    <div class="type-select__che">
+                      <div class="form-check">
+                        <input type="checkbox" name="group2" id="type-select1" checked>
+                        <label for="type-select1">
+                          <span class="form-check-control"></span>
+                        </label>
+                      </div>
+                    </div><!-- /.type-select__che -->
+                    <label class="type-select__description" for="type-select1">
+                      <div class="type-select__description-name">Эффективная стратегия</div>
+                      <div class="type-select__description-text">При попадании слова в ТОП 10 останавливать показы контекстных объявлений</div>
+                    </label><!-- /.type-select__description -->
+                  </div><!-- /.type-select -->
+
+                </div><!-- /.col-xs -->
+                <div class="col-xs">
+                  <div class="type-select">
+                    <div class="type-select__che">
+                      <div class="form-check">
+                        <input type="checkbox" name="group2" id="type-select2">
+                        <label for="type-select2">
+                          <span class="form-check-control"></span>
+                        </label>
+                      </div>
+                    </div><!-- /.type-select__che -->
+                    <label class="type-select__description" for="type-select2">
+                      <div class="type-select__description-name">Экономная стратегия</div>
+                      <div class="type-select__description-text">При попадании слова в ТОП 10 продолжать показы
+                        контекстных объявлений</div>
+                    </label><!-- /.type-select__description -->
+                  </div><!-- /.type-select -->
+                </div>
+              </div>
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+        <div class="foldable__item">
+          <div class="foldable-box foldable-box--expand">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Счётчики</span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content">
+
+              <div class="row">
+                <div class="col-xs">
+                  <div class="counter-box">
+                    <div class="counter-box__logo">
+                      <include src="../../../images/svg/metrika.svg"></include>
+                    </div><!-- /.counter-box__logo -->
+                    <div class="counter-box__btn">
+                      <a href="#" class="btn btn-outline disabled">Подключено</a>
+                      <a href="#" class="close-link"><span class="close_icon" aria-hidden="true"><i class="f-ico i-close dark"></i></span> Отключить</a>
+                    </div><!-- /.counter-box__btn -->
+                  </div><!-- /.counter-box -->
+                </div>
+                <div class="col-xs">
+                  <div class="counter-box">
+                    <div class="counter-box__logo">
+                      <include src="../../../images/svg/googleanalytics.svg"></include>
+                    </div><!-- /.counter-box__logo -->
+                    <div class="counter-box__btn">
+                      <a href="#" class="btn btn-outline">Подключить</a>
+                    </div><!-- /.counter-box__btn -->
+                  </div><!-- /.counter-box -->
+                </div>
+              </div>
+
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+        <div class="foldable__item">
+          <div class="foldable-box">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Регион продвижения</span>
+                <span class="foldable-name__help-text">Республика Мордовия</span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content">
+
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+        <div class="foldable__item">
+          <div class="foldable-box foldable-box--expand">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Расписание показа контекстной рекламы</span>
+                <span class="foldable-name__help-text">Пользовательская настройка</span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content">
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="form-group">
+                    <label for="info-time-zone">Часовой пояс</label>
+
+                    <div class="select select-support-subject">
+                      <select id="info-time-zone" class="form-control">
+                        <option value="-12.0"> (GMT -12:00) Эниветок, Кваджалейн </option>
+                        <option value="-11.0"> (GMT -11:00) Остров Мидуэй, Самоа </option>
+                        <option value="-10.0"> (GMT -10:00) Гавайи </option>
+                        <option value="-9.0"> (GMT -9:00) Аляска </option>
+                        <option value="-8.0"> (GMT -8:00) Тихоокеанское время (США и Канада) </option>
+                        <option value="-7.0"> (GMT -7:00) Горное время (США и Канада) </option>
+                        <option value="-6.0"> (GMT -6:00) Центральное время (США и Канада), Мехико</option>
+                        <option value="-5.0"> (GMT -5:00) Восточное время (США и Канада), Богота, Лима </option>
+                        <option value="-4.0"> (GMT -4:00) Атлантическое время (Канада), Каракас, Ла-Пас </option>
+                        <option value="-3.5"> (GMT -3:30) Ньюфаундленд </option>
+                        <option value="-3.0"> (GMT -3:00) Бразилия, Буэнос-Айрес, Джорджтаун </option>
+                        <option value="-2.0"> (GMT -2:00) Срединно-Атлантического </option>
+                        <option value="-1.0"> (GMT -1:00 час) Азорские острова, острова Зеленого Мыса </option>
+                        <option value="0.0"> (GMT) Время Западной Европе, Лондон, Лиссабон, Касабланка </option>
+                        <option value="1.0"> (GMT +1:00 час) Брюссель, Копенгаген, Мадрид, Париж </option>
+                        <option value="2.0"> (GMT +2:00) Киев, Калининград, Южная Африка </option>
+                        <option value="3.0" selected> (GMT +3:00) Москва</option>
+                        <option value="3.5"> (GMT +3:30) Тегеран </option>
+                        <option value="4.0"> (GMT +4:00) Абу-Даби, Мускат, Баку, Тбилиси</option>
+                        <option value="4.5"> (GMT +4:30) Кабул </option>
+                        <option value="5.0"> (GMT +5:00) Екатеринбург, Исламабад, Карачи, Ташкент</option>
+                        <option value="5.5"> (GMT +5:30) Бомбей, Калькутта, Мадрас, Нью-Дели</option>
+                        <option value="5.75"> (GMT +5:45) Катманду</option>
+                        <option value="6.0"> (GMT +6:00) Алматы, Дакке, Коломбо </option>
+                        <option value="7.0"> (GMT +7:00) Бангкок, Ханой, Джакарта</option>
+                        <option value="8.0"> (GMT +8:00) Пекин, Перт, Сингапур, Гонконг</option>
+                        <option value="9.0"> (GMT +9:00) Токио, Сеул, Осака, Саппоро, Якутск</option>
+                        <option value="9.5"> (GMT +9:30) Аделаида, Дарвин </option>
+                        <option value="10.0"> (GMT +10:00) Восточная Австралия, Гуам, Владивосток </option>
+                        <option value="11.0"> (GMT +11:00) Магадан, Соломоновы острова, Новая Каледония</option>
+                        <option value="12.0"> (GMT +12:00) Окленд, Веллингтон, Фиджи, Камчатка</option>
+                      </select>
+                    </div><!-- /.select -->
+
+                  </div><!-- /.form-group -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs">
+                  <div class="form-group">
+                    <div class="form-line">
+                      <!--<div class="btn-group">
+                        <a href="#" class="btn btn-outline btn-mini">Круглосуточно, вся неделя</a>
+                        <a href="#" class="btn btn-outline btn-mini btn-active">Рабочие часы в будние дни</a>
+                        <a href="#" class="btn btn-outline btn-mini">Будние дни, круглосуточно</a>
+                      </div>-->
+                      <div class="pseudo-links">
+                        <a href="#" class="pseudo">Круглосуточно, вся неделя</a>
+                        <a href="#" class="pseudo">Рабочие часы в будние дни</a>
+                        <a href="#" class="pseudo">Будние дни, круглосуточно</a>
+                        <a href="#" class="pseudo">Свой вариант</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="times-wrapper">
+                    <include src="../tables/table.html"></include>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input type="checkbox" name="group2" id="credit-limit">
+                      <label for="credit-limit">
+                        <span class="form-check-control">Показывать объявления в праздничные дни</span>
+                      </label>
+                    </div>
+                    <a href="" class="undo"><span class="undo-icon"><i class="f-ico i-refresh"></i></span><span class="undo-text">Сбросить изменения</span></a>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+        <div class="foldable__item">
+
+          <div class="foldable-box foldable-box--expand">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Контактные данные организации</span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content foldable__content-contact">
+
+              <div class="row">
+                <div class="col-xs">
+                  <div class="form-group"><label for="info-name-org">Название организации</label><input type="text" id="info-name-org" class="form-control" placeholder="Как называется ваша организация?"></div>
+                </div>
+                <div class="col-xs">
+                  <div class="form-group"><label for="info-country">Страна</label><input type="text" id="info-country" class="form-control" placeholder="Начните вводить название Страны"></div>
+                </div>
+                <div class="col-xs">
+                  <div class="form-group"><label for="info-city">Город</label><input type="text" id="info-city" class="form-control" placeholder="Начните вводить название города"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="info-street">Улица</label><input type="text" id="info-street" class="form-control" placeholder="Начните вводить адрес"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="form-group"><label for="info-dom">Дом</label><input type="text" id="info-dom" class="form-control" placeholder="Номер дома"></div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form-group"><label for="info-korp">Корпус</label><input type="text" id="info-korp" class="form-control" placeholder="Обозначение корпуса"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="form-group"><label for="info-ofice">Офис</label><input type="text" id="info-ofice" class="form-control" placeholder="Номер офиса, если есть"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="form-group">
+                    <label for="info-time-job">Режим работы</label>
+                    <div class="select select-support-subject">
+                      <select id="info-time-job" class="form-control">
+                        <option value="1" selected>Понедельник</option>
+                        <option value="2">Вторник</option>
+                        <option value="3">Среда</option>
+                        <option value="4">Четверг</option>
+                        <option value="5">Пятница</option>
+                        <option value="6">Суббота</option>
+                        <option value="7">Воскресенье</option>
+                      </select>
+                    </div><!-- /.select -->
+                  </div>
+                </div>
+                <div class="col-xs-4" style="position: relative;">
+                  <div class="" style="position: absolute;bottom: 35px;left: -11px;"><i class="f-ico i-arrow"></i></div>
+                  <div class="form-group">
+                    <label for="" class="hidden">Конец рабочей недели</label>
+                    <div class="select select-support-subject">
+                      <select class="form-control">
+                        <option value="1">Понедельник</option>
+                        <option value="2">Вторник</option>
+                        <option value="3">Среда</option>
+                        <option value="4">Четверг</option>
+                        <option value="5" selected>Пятница</option>
+                        <option value="6">Суббота</option>
+                        <option value="7">Воскресенье</option>
+                      </select>
+                    </div><!-- /.select -->
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="" class="hidden">Время работы</label>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="select select-support-subject">
+                          <select class="form-control">
+                            <option value="0;0">00:00</option>
+                            <option value="0;15">00:15</option>
+                            <option value="0;30">00:30</option>
+                            <option value="0;45">00:45</option>
+                            <option value="1;0">01:00</option>
+                            <option value="1;15">01:15</option>
+                            <option value="1;30">01:30</option>
+                            <option value="1;45">01:45</option>
+                            <option value="2;0">02:00</option>
+                            <option value="2;15">02:15</option>
+                            <option value="2;30">02:30</option>
+                            <option value="2;45">02:45</option>
+                            <option value="3;0">03:00</option>
+                            <option value="3;15">03:15</option>
+                            <option value="3;30">03:30</option>
+                            <option value="3;45">03:45</option>
+                            <option value="4;0">04:00</option>
+                            <option value="4;15">04:15</option>
+                            <option value="4;30">04:30</option>
+                            <option value="4;45">04:45</option>
+                            <option value="5;0">05:00</option>
+                            <option value="5;15">05:15</option>
+                            <option value="5;30">05:30</option>
+                            <option value="5;45">05:45</option>
+                            <option value="6;0">06:00</option>
+                            <option value="6;15">06:15</option>
+                            <option value="6;30">06:30</option>
+                            <option value="6;45">06:45</option>
+                            <option value="7;0">07:00</option>
+                            <option value="7;15">07:15</option>
+                            <option value="7;30">07:30</option>
+                            <option value="7;45">07:45</option>
+                            <option value="8;0">08:00</option>
+                            <option value="8;15">08:15</option>
+                            <option value="8;30">08:30</option>
+                            <option value="8;45">08:45</option>
+                            <option value="9;0" selected>09:00</option>
+                            <option value="9;15">09:15</option>
+                            <option value="9;30">09:30</option>
+                            <option value="9;45">09:45</option>
+                            <option value="10;0">10:00</option>
+                            <option value="10;15">10:15</option>
+                            <option value="10;30">10:30</option>
+                            <option value="10;45">10:45</option>
+                            <option value="11;0">11:00</option>
+                            <option value="11;15">11:15</option>
+                            <option value="11;30">11:30</option>
+                            <option value="11;45">11:45</option>
+                            <option value="12;0">12:00</option>
+                            <option value="12;15">12:15</option>
+                            <option value="12;30">12:30</option>
+                            <option value="12;45">12:45</option>
+                            <option value="13;0">13:00</option>
+                            <option value="13;15">13:15</option>
+                            <option value="13;30">13:30</option>
+                            <option value="13;45">13:45</option>
+                            <option value="14;0">14:00</option>
+                            <option value="14;15">14:15</option>
+                            <option value="14;30">14:30</option>
+                            <option value="14;45">14:45</option>
+                            <option value="15;0">15:00</option>
+                            <option value="15;15">15:15</option>
+                            <option value="15;30">15:30</option>
+                            <option value="15;45">15:45</option>
+                            <option value="16;0">16:00</option>
+                            <option value="16;15">16:15</option>
+                            <option value="16;30">16:30</option>
+                            <option value="16;45">16:45</option>
+                            <option value="17;0">17:00</option>
+                            <option value="17;15">17:15</option>
+                            <option value="17;30">17:30</option>
+                            <option value="17;45">17:45</option>
+                            <option value="18;0">18:00</option>
+                            <option value="18;15">18:15</option>
+                            <option value="18;30">18:30</option>
+                            <option value="18;45">18:45</option>
+                            <option value="19;0">19:00</option>
+                            <option value="19;15">19:15</option>
+                            <option value="19;30">19:30</option>
+                            <option value="19;45">19:45</option>
+                            <option value="20;0">20:00</option>
+                            <option value="20;15">20:15</option>
+                            <option value="20;30">20:30</option>
+                            <option value="20;45">20:45</option>
+                            <option value="21;0">21:00</option>
+                            <option value="21;15">21:15</option>
+                            <option value="21;30">21:30</option>
+                            <option value="21;45">21:45</option>
+                            <option value="22;0">22:00</option>
+                            <option value="22;15">22:15</option>
+                            <option value="22;30">22:30</option>
+                            <option value="22;45">22:45</option>
+                            <option value="23;0">23:00</option>
+                            <option value="23;15">23:15</option>
+                            <option value="23;30">23:30</option>
+                            <option value="23;45">23:45</option>
+                          </select>
+                        </div><!-- /.select -->
+                      </div>
+                      <div class="col-xs-6" style="position: relative;">
+                        <div class="" style="position: absolute;bottom: 35px;left: -11px;"><i class="f-ico i-arrow"></i></div>
+                        <div class="select select-support-subject">
+                          <select class="form-control">
+                            <option value="0;0">00:00</option>
+                            <option value="0;15">00:15</option>
+                            <option value="0;30">00:30</option>
+                            <option value="0;45">00:45</option>
+                            <option value="1;0">01:00</option>
+                            <option value="1;15">01:15</option>
+                            <option value="1;30">01:30</option>
+                            <option value="1;45">01:45</option>
+                            <option value="2;0">02:00</option>
+                            <option value="2;15">02:15</option>
+                            <option value="2;30">02:30</option>
+                            <option value="2;45">02:45</option>
+                            <option value="3;0">03:00</option>
+                            <option value="3;15">03:15</option>
+                            <option value="3;30">03:30</option>
+                            <option value="3;45">03:45</option>
+                            <option value="4;0">04:00</option>
+                            <option value="4;15">04:15</option>
+                            <option value="4;30">04:30</option>
+                            <option value="4;45">04:45</option>
+                            <option value="5;0">05:00</option>
+                            <option value="5;15">05:15</option>
+                            <option value="5;30">05:30</option>
+                            <option value="5;45">05:45</option>
+                            <option value="6;0">06:00</option>
+                            <option value="6;15">06:15</option>
+                            <option value="6;30">06:30</option>
+                            <option value="6;45">06:45</option>
+                            <option value="7;0">07:00</option>
+                            <option value="7;15">07:15</option>
+                            <option value="7;30">07:30</option>
+                            <option value="7;45">07:45</option>
+                            <option value="8;0">08:00</option>
+                            <option value="8;15">08:15</option>
+                            <option value="8;30">08:30</option>
+                            <option value="8;45">08:45</option>
+                            <option value="9;0">09:00</option>
+                            <option value="9;15">09:15</option>
+                            <option value="9;30">09:30</option>
+                            <option value="9;45">09:45</option>
+                            <option value="10;0">10:00</option>
+                            <option value="10;15">10:15</option>
+                            <option value="10;30">10:30</option>
+                            <option value="10;45">10:45</option>
+                            <option value="11;0">11:00</option>
+                            <option value="11;15">11:15</option>
+                            <option value="11;30">11:30</option>
+                            <option value="11;45">11:45</option>
+                            <option value="12;0">12:00</option>
+                            <option value="12;15">12:15</option>
+                            <option value="12;30">12:30</option>
+                            <option value="12;45">12:45</option>
+                            <option value="13;0">13:00</option>
+                            <option value="13;15">13:15</option>
+                            <option value="13;30">13:30</option>
+                            <option value="13;45">13:45</option>
+                            <option value="14;0">14:00</option>
+                            <option value="14;15">14:15</option>
+                            <option value="14;30">14:30</option>
+                            <option value="14;45">14:45</option>
+                            <option value="15;0">15:00</option>
+                            <option value="15;15">15:15</option>
+                            <option value="15;30">15:30</option>
+                            <option value="15;45">15:45</option>
+                            <option value="16;0">16:00</option>
+                            <option value="16;15">16:15</option>
+                            <option value="16;30">16:30</option>
+                            <option value="16;45">16:45</option>
+                            <option value="17;0">17:00</option>
+                            <option value="17;15">17:15</option>
+                            <option value="17;30">17:30</option>
+                            <option value="17;45">17:45</option>
+                            <option value="18;0">18:00</option>
+                            <option value="18;15">18:15</option>
+                            <option value="18;30">18:30</option>
+                            <option value="18;45" selected>18:45</option>
+                            <option value="19;0">19:00</option>
+                            <option value="19;15">19:15</option>
+                            <option value="19;30">19:30</option>
+                            <option value="19;45">19:45</option>
+                            <option value="20;0">20:00</option>
+                            <option value="20;15">20:15</option>
+                            <option value="20;30">20:30</option>
+                            <option value="20;45">20:45</option>
+                            <option value="21;0">21:00</option>
+                            <option value="21;15">21:15</option>
+                            <option value="21;30">21:30</option>
+                            <option value="21;45">21:45</option>
+                            <option value="22;0">22:00</option>
+                            <option value="22;15">22:15</option>
+                            <option value="22;30">22:30</option>
+                            <option value="22;45">22:45</option>
+                            <option value="23;0">23:00</option>
+                            <option value="23;15">23:15</option>
+                            <option value="23;30">23:30</option>
+                            <option value="23;45">23:45</option>
+                          </select>
+                        </div>
+                      </div><!-- /.select -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="info-tel">Телефон</label>
+                    <div class="form-group-box">
+                      <input type="text" class="form-control" placeholder="+7">
+                      <input type="text" class="form-control" placeholder="код города">
+                      <input type="text" class="form-control" placeholder="телефон" id="info-tel">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="info-mail">Email</label><input type="text" id="info-mail" class="form-control" placeholder="Адрес эл. почты"></div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="">Интернет пейджер</label>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="select select-support-subject">
+                          <select class="form-control">
+                            <option value="1" disabled selected>Нужно выбрать</option>
+                            <option value="2">ICQ</option>
+                            <option value="3">Jabber/GTalk</option>
+                            <option value="4">Skype</option>
+                            <option value="5">Mail.ru Агент</option>
+                            <option value="7">Viber</option>
+                            <option value="8">Telegram</option>
+                            <option value="9">WhatsApp</option>
+                            <option value="9">Сова или голуби</option>
+                          </select>
+                        </div><!-- /.select -->
+                      </div>
+                      <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="Логин, номер или почта">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs">
+                  <div class="form-group form-group--border">
+                    <label for="info-message">Подробнее о товаре или услуге</label>
+                    <textarea id="info-message" class="form-control" rows="3" placeholder="Ваше сообщение"></textarea>
+                  </div><!-- /.form-group -->
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="ogrnogrnip" title="ОГРН (для юр.лиц) и ОГРНИП (для индивидуальных предпринимателей) — Основной государственный регистрационный номер">ОГРН или ОГРНИП</label><input type="text" class="form-control" placeholder="13 цифр" id="ogrnogrnip"></div>
+                </div>
+              </div>
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+        <div class="foldable__item">
+          <div class="foldable-box foldable-box--expand">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Лицензии и сертификаты на товары и услуги</span>
+                <span class="foldable-name__help-text">
+                  <span class="help-link__icon"><i class="f-ico i-info-small"></i></span>
+                  <span class="help-link__text">Только для ведения контекста в определенных <a href="#">тематиках</a>.</span>
+                </span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content">
+
+              <div class="row">
+                <div class="col-xs">
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-outline">Загрузить фаил</button>
+                    <div class="form-inline">
+                      <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} файла будет загружено" multiple />
+                      <label for="file-3">
+                        <span class="attach-icon"><i class="f-ico i-attach"></i></span>
+                        <span>Прикрепить фаил&hellip;</span>
+                      </label>
+                    </div><!-- /.form-inline -->
+                  </div><!-- /.form-actions -->
+                </div>
+              </div>
+
+              <div class="row">
+                <!--<div class="col-xs">
+                  <div class="form-group"><label for="docs-name">Название</label><input type="text" id="docs-name" class="form-control" placeholder="Например: лицензия на всё золото в мире"></div>
+                </div>-->
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="docs-type">Тип документа</label>
+                    <div class="select select-support-subject">
+                      <select class="form-control" id="docs-type">
+                        <option value="1" disabled selected>Выберите из списка</option>
+                        <option value="2">Документ с цветочками</option>
+                        <option value="3">Документ с круголой печатью</option>
+                        <option value="4">Документ с квадратной печатью</option>
+                        <option value="5">Документ с треугольной печатью</option>
+                      </select>
+                    </div><!-- /.select -->
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="form-group"><label for="docs-end">Окончание действия</label><input type="text" id="docs-end" class="form-control" placeholder="Полная дата: день, месяц и год"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs">
+                  <div class="form-actions">
+                    <button class="btn btn-blue disabled">Добавить</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="docs">
+                <div class="docs__item">
+                  <div class="docs-box">
+                    <div class="docs-preview">
+                      <div class="docs-preview-box"></div>
+                    </div><!-- /.docs-preview -->
+                    <div class="docs-description">
+                      <div class="docs-status docs-status-moderate">На модерации</div>
+                      <div class="docs-status docs-status-ok">Одобрено</div>
+                      <div class="docs-status">Документ в работе</div>
+                      <div class="docs-what">
+                        <div class="docs-what_title">Тип документа</div>
+                        <div class="docs-what_name">Сертификат</div>
+                      </div>
+                      <div class="docs-what">
+                        <div class="docs-what_title">Действителен до</div>
+                        <div class="docs-what_name">15 марта 2019</div>
+                      </div>
+                    </div><!-- /.docs-description -->
+                    <div class="remove">
+                      <div class="close" title="Удалить документ?">
+                        <span class="close_icon" aria-hidden="true"><i class="f-ico i-close dark"></i></span>
+                      </div><!-- /.close -->
+                    </div><!-- /.remove -->
+                  </div><!-- /.docs-box -->
+                </div><!-- /.docs__item -->
+              </div><!-- /.docs -->
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+        <div class="foldable__item">
+          <div class="foldable-box foldable-box--expand">
+            <div class="foldable__header">
+              <div class="foldable-name">
+                <span>Дополнительные настройки</span>
+                <span class="foldable-name__help-text"></span>
+              </div><!-- /.foldable-name -->
+              <div class="foldable-status">
+                <span><i class="f-ico i-chevron"></i></span>
+              </div><!-- /.foldable-status -->
+            </div><!-- /.foldable__header -->
+            <div class="foldable__content">
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" name="group2" id="exact-phrase" checked>
+                  <label for="exact-phrase">
+                    <span class="form-check-control">Использовать &laquo;Точные фразы&raquo; для контекстной рекламы</span>
+                  </label>
+                </div>
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label for="credit-limit">Коррекция расходов</label>
+                <div class="form-line">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-outline">Не реагировать</a>
+                    <a href="#" class="btn btn-outline btn-active">Моментально</a>
+                    <a href="#" class="btn btn-outline">Плавно</a>
+                  </div>
+                </div>
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label for="">Текст анкоров</label>
+
+                <div class="form-check">
+                  <input type="checkbox" name="group2" id="recommendation" checked>
+                  <label for="recommendation">
+                    <span class="form-check-control">Генерировать варианты с использованием окружающего текста</span>
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" name="group2" id="critical-notice">
+                  <label for="critical-notice">
+                    <span class="form-check-control">В точности повторять ключевое слово</span>
+                  </label>
+                </div>
+              </div>
+
+            </div><!-- /.foldable__content -->
+          </div><!-- /.foldable-box -->
+        </div><!-- /.foldable__item -->
+
+      </div><!-- /.foldable -->
+    </div><!-- /.settings-list -->
+  </div><!-- /.wrapper -->
+</div><!-- /.main -->
+

@@ -1,0 +1,91 @@
+.main .content.content-finance {
+  padding-top: 35px;
+}
+.finance-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  &__item {
+    flex-basis: 310px;
+    text-align: right;
+  }
+  &__name {
+    color: #2c3133;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__value {
+    color: #2c3133;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 24px;
+    .unit {
+      font-size: 18px;
+    }
+  }
+}
+
+.finance-table {
+  padding-top: 0;
+  .balance {
+    font-weight: bold;
+  }
+  .parent ~ .children {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  .open .parent ~ .children {
+    display: table-row;
+    transition: all 0.3s ease;
+  }
+  .parent {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .open {
+    background-color: #f7fafa;
+    transition: all 0.3s ease;
+  }
+  .open .children {
+    background-color: #f7fafa;
+    transition: all 0.3s ease;
+    &:not(:last-child) td {
+      border-bottom: 0;
+    }
+    &:last-child td {
+      padding-bottom: 18px;
+    }
+    td {
+      padding: 10px 22px 7px 18px;
+    }
+  }
+  .open .parent {
+    td {
+      border-bottom: 0;
+      padding-bottom: 5px;
+    }
+  }
+  .parent > *:last-child {
+    width: 30px;
+  }
+  .parent .expand {
+    display: block;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+    margin: -.5rem;
+    padding: .5rem;
+  }
+  .open .parent .expand {
+    transform: rotate(180deg);
+  }
+  .expand > svg {
+    fill: #c3c8cc;
+  }
+  .nan > svg {
+    fill: #c3c8cc;
+  }
+}

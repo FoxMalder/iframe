@@ -1,0 +1,113 @@
+.recommendations {
+  padding: 40px 20px 40px 20px;
+  .recommendation {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(233, 239, 240);
+    border-radius: 2px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    &:hover {
+      border: 1px solid rgb(195, 200, 204);
+      cursor: pointer;
+      z-index: 10;
+    }
+    &.expand {
+      border: 1px solid rgb(195, 200, 204);
+      z-index: 10;
+      &:hover {
+        cursor: default;
+      }
+      .recommendations__content {
+        display: block;
+      }
+    }
+  }
+  &-box {
+    padding: 21px 40px 21px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    transition: all 0.3s ease;
+  }
+  &__icon {
+    position: relative;
+    align-self: stretch;
+    margin-right: 18px;
+  }
+  &__header {
+    margin: auto;
+    flex: 1 100%;
+  }
+  &__name {
+    color: rgb(44, 49, 51);
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__content {
+    display: none;
+    background-color: #f7fafa;
+    padding: 20px 40px 20px 20px;
+  }
+}
+
+.recommendations-group {
+  margin-bottom: 20px;
+
+  &_header {
+    padding: 15px 20px 11px 60px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(233, 239, 240);
+    border-bottom: 0;
+  }
+
+  .recommendation {
+    margin-bottom: -1px;
+    border-radius: 0;
+
+    &:first-child {
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+
+  &_more {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(233, 239, 240);
+    border-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+    a {
+      background-color: #ffffff;
+      display: block;
+      padding: 15px 20px 11px 60px;
+      color: #000;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-decoration: none;
+      
+      &:hover {
+        background-color: rgb(38, 136, 235);
+        color: #fff;
+      }
+    }
+  }
+}
