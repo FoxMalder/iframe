@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="cleartype" content="on"/>
+
+    <title>Что же я наделал?</title>
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/style-skin.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/scripts/jquery.qtip/jquery.qtip.css" />
+    <script type="text/javascript" src="assets/scripts/jquery.qtip/jquery.qtip.js"></script>
+    <script src="assets/scripts/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/scripts/magnific-popup/magnific-popup.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/inputmask/phone-codes/phone.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').select2({
+          placeholder: 'Нужно выбрать вариант',
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          dropdownAutoWidth : true
+        });
+        moment.locale('ru');
+        $('input[name="daterange"]').daterangepicker({
+          "startDate": "09/8/2017",
+          "endDate": "10/04/2017",
+          locale: {
+            cancelLabel: 'Сбросить',
+            applyLabel: 'Применить'
+          }
+        });
+        $('a').qtip({
+          style: { classes: 'qtip-light qtip-rounded' }
+        });
+      });
+    </script>
+
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="info">
+          <a href="./" class="info__link">
+            <span><i class="f-ico i-info"></i></span>
+          </a>
+        </div>
+        <nav class="user">
+          <ul class="user-menu">
+
+            <li class="user-menu__item">
+              <a class="user-menu__link message" href="support3.html" title="Для вас есть новые сообщения и уведомления">
+                <span class="user-menu__icon"><i class="f-ico i-message"></i><span class="label">у вас есть новые уведомления</span></span>
+                <span class="user-menu__text">Техническая поддержка</span>
+              </a>
+            </li>
+
+            <li class="user-menu__item">
+              <a class="user-menu__link user" href="settings-account.html">
+                <span class="user-menu__text">moof37@yandex.ru</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style>
+      .donuts-demo {
+        padding: 60px 40px 22px 40px
+      }
+
+      .donuts-demo .row {
+        margin-bottom: 45px;
+      }
+
+      .demo-info {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 4px;
+        color: #445365;
+      }
+
+      code:not([class]),
+      tt:not([class]) {
+        background: #fff;
+        border: 1px solid #fafafa;
+        color: #cb3716;
+        border-radius: 3px;
+        padding: 2px 5px;
+        font-size: 0.85em;
+      }
+    </style>
+
+
+    <div class="donuts-demo">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs">
+
+            <div class="first donut">
+              <div class="donut_type">100</div>
+            </div>
+            <div class="demo-info">Запущен SEO+PPC</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="second donut">
+              <div class="donut_type">50</div>
+            </div>
+            <div class="demo-info">Запущен SEO</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="third donut">
+              <div class="donut_type">50</div>
+            </div>
+            <div class="demo-info">Запущен PPC</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="forth donut">
+              <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+            </div>
+            <div class="demo-info">Запущено всё, но в PPC есть проблема</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="fifth donut">
+              <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+            </div>
+            <div class="demo-info">Запущено только PPC с проблемой</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="six donut">
+              <div class="donut_type donut_type--icon"><i class="f-ico i-pause gray"></i></div>
+            </div>
+            <div class="demo-info">Остановлено пользователем</div>
+
+          </div><!-- /.col-xs -->
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs">
+
+            <div class="first donut donut--blur">
+              <div class="donut_type">100</div>
+            </div>
+            <div class="demo-info">Запущен SEO+PPC</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="second donut donut--blur">
+              <div class="donut_type">50</div>
+            </div>
+            <div class="demo-info">Запущен SEO</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="third donut donut--blur">
+              <div class="donut_type">50</div>
+            </div>
+            <div class="demo-info">Запущен PPC</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="forth donut donut--blur">
+              <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+            </div>
+            <div class="demo-info">Запущено всё, но в PPC есть проблема</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="fifth donut donut--blur">
+              <div class="donut_type donut_type--icon"><i class="f-ico i-alert red"></i></div>
+            </div>
+            <div class="demo-info">Запущено только PPC с проблемой</div>
+
+          </div><!-- /.col-xs -->
+
+          <div class="col-xs">
+
+            <div class="six donut donut--blur">
+              <div class="donut_type donut_type--icon"><i class="f-ico i-pause gray"></i></div>
+            </div>
+            <div class="demo-info">Остановлено пользователем</div>
+
+          </div><!-- /.col-xs -->
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs">
+            <h1>Как оно всё устроено</h1>
+            <p>Булики статуса строятся через <code>canvas</code> плагинм <a href="http://kottenator.github.io/jquery-circle-progress/" target="_blank">kottenator.github.io/jquery-circle-progress/</a>. Файл самого плагина расположен в <code>app/scripts/progress.js</code>.</p>
+            <p>Документация плагина <a href="https://github.com/kottenator/jquery-circle-progress" target="_blank">расположена на ГитХабе</a>.</p>
+            <div class="row">
+              <div class="col-xs">
+                <p>Пример для третьего пончика в первой строке:</p>
+                <div class="code">
+                  <pre><code class="html">&lt;div class="third donut"&gt;<br />  &lt;div class="donut_type"&gt;50&lt;/div&gt;<br />&lt;/div&gt;</code></pre>
+                </div><!-- /.code -->
+              </div>
+              <div class="col-xs">
+                <p>Пример JS-кода для третьего пончика в первой строке:</p>
+                <div class="code">
+                  <pre><code class="js">$('.third.donut').donutProgress({<br />  value: .5,<br />  animation: false,<br />  fill: '#2688eb',<br />  startAngle: -Math.PI / 4 * -2<br />});</code></pre>
+                </div><!-- /.code -->
+              </div>
+              <div class="col-xs">
+                <p>Общее глобальное правило для настройки размеров, толщины основных линий, анимации и угла поворота для точки старта:</p>
+                <div class="code">
+                  <pre><code class="js">$('.donut').donutProgress({<br />  size: 50,<br />  animation: false,<br />  thickness: 5,<br />  startAngle: -Math.PI / 4 * 2<br />});</code></pre>
+                </div><!-- /.code -->
+              </div>
+            </div>
+            <p><strong>Важно</strong>: предложенные варианты классов для разделения примеров типа <code>.first</code>, <code>.second</code>, <code>.third</code>, <code>.forth</code> не являются истинными! Я использовал их только в качестве примеров.</p>
+            <p>Вторая строка — это неактивные элементы. Им просто добавляется прозрачность классом <code>.donut--blur</code>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="assets/scripts/scripts.js"></script>
+  </body>
+</html>

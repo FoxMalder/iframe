@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="cleartype" content="on"/>
+
+    <title>Ключевые слова</title>
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/style-skin.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/scripts/jquery.qtip/jquery.qtip.css" />
+    <script type="text/javascript" src="assets/scripts/jquery.qtip/jquery.qtip.js"></script>
+    <script src="assets/scripts/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/scripts/magnific-popup/magnific-popup.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/inputmask/phone-codes/phone.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').select2({
+          placeholder: 'Нужно выбрать вариант',
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          dropdownAutoWidth : true
+        });
+        moment.locale('ru');
+        $('input[name="daterange"]').daterangepicker({
+          "startDate": "09/8/2017",
+          "endDate": "10/04/2017",
+          locale: {
+            cancelLabel: 'Сбросить',
+            applyLabel: 'Применить'
+          }
+        });
+        $('a').qtip({
+          style: { classes: 'qtip-light qtip-rounded' }
+        });
+      });
+    </script>
+
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="info">
+          <a href="./" class="info__link">
+            <span><i class="f-ico i-info"></i></span>
+          </a>
+        </div>
+        <nav class="user">
+          <ul class="user-menu">
+
+            <li class="user-menu__item">
+              <a class="user-menu__link message" href="support3.html" title="Для вас есть новые сообщения и уведомления">
+                <span class="user-menu__icon"><i class="f-ico i-message"></i><span class="label">у вас есть новые уведомления</span></span>
+                <span class="user-menu__text">Техническая поддержка</span>
+              </a>
+            </li>
+
+            <li class="user-menu__item">
+              <a class="user-menu__link user" href="settings-account.html">
+                <span class="user-menu__text">moof37@yandex.ru</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="project-header">
+
+      <div class="project">
+        <div class="project-icon">
+          <img src="assets/images/getsale-icon.png" alt="">
+        </div><!-- /.project-icon -->
+        <div class="project-name" title="GetSale">
+          <span>GetSale</span>
+        </div><!-- /.project-name -->
+        <div class="project-geography" title="Москва, Московская область">
+          <span>Москва, Московская область</span>
+        </div><!-- /.project-geography -->
+      </div><!-- /.project -->
+
+      <div class="balance">
+
+        <div class="balance-project">
+          <a href="finance-statistics.html" title="Откроется финансовая статистика">
+            <div class="balance-value">
+              <span>8&nbsp;782.40&nbsp;&#8381;</span>
+            </div><!-- /.balance-value -->
+            <div class="balance-time">
+              <span>Хватит на 15 дней</span>
+            </div><!-- /.balance-time -->
+          </a>
+        </div><!-- /.balance-project -->
+        <div class="recharge">
+          <a href="pay-and-start.html" class="btn btn-outline">Пополнить счёт</a>
+        </div><!-- /.recharge -->
+      </div><!-- /.balance -->
+
+    </div><!-- /.project-header -->
+
+    <div class="project-tabs">
+
+      <ul class="project-nav">
+
+        <li class="project-nav__item ">
+          <a href="statistics.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-statistics"></i></span>
+            <span class="project-nav__text">Статистика <span class="badge badge--orange" title="Новых событий в статистике">99+</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item project-nav__item--active">
+          <a href="keywords.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-loupe"></i></span>
+            <span class="project-nav__text">Ключевые слова</span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="recommendation.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-recommendation"></i></span>
+            <span class="project-nav__text">Рекомендации <span class="badge badge--orange" title="Новых рекомендаций для ваших кампаний">9</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="settings-full.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-settings"></i></span>
+            <span class="project-nav__text">Настройки</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div><!-- /.project-tabs -->
+
+    
+    <div class="main">
+      <div class="wrapper">
+
+        <div class="content">
+          <h2>Добавление новых ключевых слов</h2>
+          <div class="type-select-box">
+            <div class="row">
+              <div class="col-xs">
+
+                <div class="type-select">
+                  <div class="type-select__che">
+                    <div class="type-select-counter"><span>2</span></div>
+                  </div><!-- /.type-select__che -->
+                  <label class="type-select__description">
+                    <div class="type-select__description-name">Автоматический режим</div>
+                    <div class="type-select__description-text">Подобрать ключевые слова с определенной страницы сайта</div>
+                    <div class="block-btn"><a href="" class="btn btn-outline">Подобрать</a></div>
+                  </label><!-- /.type-select__description -->
+                </div><!-- /.type-select -->
+
+              </div><!-- /.col-xs -->
+              <div class="col-xs">
+
+                <div class="type-select type-select--active">
+                  <div class="type-select__che">
+                    <div class="type-select-counter"><span>2</span></div>
+                  </div><!-- /.type-select__che -->
+                  <label class="type-select__description">
+                    <div class="type-select__description-name">Ручной режим</div>
+                    <div class="type-select__description-text">Добавить ключевые слова самостоятельно</div>
+                    <div class="block-btn"><a href="" class="btn btn-outline disabled">Добавить</a></div>
+                  </label><!-- /.type-select__description -->
+                </div><!-- /.type-select -->
+
+              </div><!-- /.col-xs -->
+              <div class="col-xs">
+
+                <div class="type-select">
+                  <div class="type-select__che">
+                    <div class="type-select-counter"><span>2</span></div>
+                  </div><!-- /.type-select__che -->
+                  <label class="type-select__description">
+                    <div class="type-select__description-name">Подобрать из YML</div>
+                    <div class="type-select__description-text">Укажите адрес YML (XML) файла, чтобы выбрать товары</div>
+                    <div class="block-btn"><a href="" class="btn btn-outline">Загрузить</a></div>
+                  </label><!-- /.type-select__description -->
+                </div><!-- /.type-select -->
+
+              </div><!-- /.col-xs -->
+            </div><!-- /.row -->
+          </div><!-- /.type-select-box -->
+        </div><!-- /.content -->
+
+
+
+        <div class="table-content">
+
+          <table class="table table--gray table-words">
+            <thead>
+              <tr>
+                <th width="40">
+                  <span class="table_icon"><i class="f-ico i-filter"></i></span>
+                </th>
+                <th width="333">
+                  <span class="table_name">Ключевое слово</span>
+                  <span class="table_name-help">Посадочная страница</span>
+                </th>
+                <th width="149">
+                  <span class="table_name">Конкуренция</span>
+                  <span class="table_name-help">По слову</span>
+                </th>
+                <th class="text-right">
+                  <span class="table_name">Прогноз переходов за месяц</span>
+                  <span class="table_name-help">После запуска <span class="interval"><i class="f-ico i-arrow"></i></span> После роста</span>
+                </th>
+                <th class="text-right">
+                  <span class="table_name">Бюджет</span>
+                  <span class="table_name-help">руб / мес</span>
+                </th>
+                <th width="60"></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="add-word">
+                <td style="padding-right: 18px;">
+                  <label for="new-keyword">
+                    <span class="table_icon"><i class="f-ico i-plus-in-circle"></i></span>
+                  </label>
+                </td>
+                <td colspan="5">
+                  <div class="form-group">
+                    <input type="text" id="new-keyword" class="form-control" placeholder="Ввдите свое ключевое слово или адрес страницы">
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div><!-- /.table-content -->
+
+        <div class="content" style="padding-top: 5px;">
+          <h2>Слова в работе</h2>
+        </div><!-- /.content -->
+
+      </div><!-- /.wrapper -->
+    </div><!-- /.main -->
+
+    <div class="main">
+      <div class="wrapper">
+
+        <div class="table-content">
+
+          <table class="table table-words">
+            <thead>
+              <tr>
+                <th width="60">
+                  <span class="table_icon" style="visibility: hidden;"><i class="f-ico i-filter"></i></span>
+                </th>
+                <th width="300">
+                  <span class="table_name">Ключевое слово</span>
+                  <span class="table_name-help">Посадочная страница</span>
+                </th>
+                <th class="text-right" width="">
+                  <span class="table_name">Яндекс</span>
+                  <span class="table_name-help">Пизиции</span>
+                </th>
+                <th class="text-right">
+                  <span class="table_name">Google</span>
+                  <span class="table_name-help">Пизиции</span>
+                </th>
+                <th class="text-right">
+                  <span class="table_name">Показы</span>
+                  <span class="table_name-help">За месяц</span>
+                </th>
+                <th class="text-right">
+                  <span class="table_name">Переходы</span>
+                  <span class="table_name-help">За месяц</span>
+                </th>
+                <th class="text-right">
+                  <span class="table_name">Бюджет</span>
+                  <span class="table_name-help">руб / мес</span>
+                </th>
+                <th width="60"></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+                </td>
+                <td>
+                  <span class="table_name">Бизнес идеи</span>
+                  <span class="table_name-help">seopult.ru/job</span>
+                </td>
+                <td class="text-right dynamics-td">75<span class="dynamics red"><i class="f-ico i-dynamics red"></i>9</span></td>
+                <td class="text-right dynamics-td">3<span class="dynamics green"><i class="f-ico i-dynamics green up"></i>3</span></td>
+                <td class="text-right balance">16 469</td>
+                <td class="text-right balance">6 469</td>
+                <td class="text-right">1 890</td>
+                <td>
+                  <div class="td-controls">
+                    <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                    <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                    <span class="table_icon"><i class="f-ico i-recommendation orange"></i></span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody>
+            <tr>
+              <td>
+                <span class="table_icon"><i class="f-ico i-pause red"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Управление персоналом</span>
+                <span class="table_name-help">Объявление не прошло модерацию</span>
+              </td>
+              <td class="text-right">26</td>
+              <td class="text-right">18</td>
+              <td class="text-right balance">2 752</td>
+              <td class="text-right balance">423</td>
+              <td class="text-right">990</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-wrench red"></i></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+            <tbody>
+            <tr>
+              <td>
+                <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Повышение квалификации</span>
+                <span class="table_name-help">seopult.ru/job</span>
+              </td>
+              <td class="text-right">89</td>
+              <td class="text-right">6</td>
+              <td class="text-right balance">18 335</td>
+              <td class="text-right balance">8 336</td>
+              <td class="text-right">1 451</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling"></i></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+            <tbody>
+            <tr>
+              <td>
+                <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Бизнес с нуля</span>
+                <span class="table_name-help">seopult.ru/job</span>
+              </td>
+              <td class="text-right">
+                <i class="f-ico i-no"></i>
+              </td>
+              <td class="text-right">3</td>
+              <td class="text-right balance">24 619</td>
+              <td class="text-right balance">4 211</td>
+              <td class="text-right">2 351</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling"></i></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+            <!--  -->
+
+            <tbody class="open">
+            <tr class="parent">
+              <td>
+                <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Бизнес идеи</span>
+                <span class="table_name-help">seopult.ru/job</span>
+              </td>
+              <td class="text-right">15</td>
+              <td class="text-right">15</td>
+              <td class="text-right balance">35 715</td>
+              <td class="text-right balance">5 551</td>
+              <td class="text-right">10 241</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling"></i></span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="children">
+              <td colspan="9">
+                <div class="keyword_wrapper">
+                  <div class="keyword_wrapper_header">
+                    <div class="name-keyword-row">Отчёты по контекстной рекламе</div>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-outline btn-mini">всё время</a>
+                      <a href="#" class="btn btn-outline btn-mini">90 дней</a>
+                      <a href="#" class="btn btn-outline btn-mini btn-active">30 дней</a>
+                      <a href="#" class="btn btn-outline btn-mini">неделя</a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-outline btn-mini">28 января <span class="interval"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="21" height="7" viewBox="0 0 21 7">
+  <path d="M-0.000,3.000 L18.000,3.000 L18.000,-0.000 L21.000,3.000 L21.000,4.000 L18.000,7.000 L18.000,4.000 L-0.000,4.000 L-0.000,3.000 Z" class="f-icon arrow"/>
+</svg>
+</span> 28 февраля</a>
+                    </div>
+                  </div>
+                  <div class="keyword_wrapper-row" style="padding-left: 0;">
+                    <div class="keyword_wrapper__col">
+                      <h3>Яндекс.Директ</h3>
+                      <div class="graph-box graph-yandexs" id="graph-yandex"></div>
+                    </div><!-- /.keyword_wrapper__col -->
+
+                    <div class="keyword_wrapper__col">
+                      <h3>Google AdWords</h3>
+                      <div class="graph-box graph-googles" id="graph-google"></div>
+                    </div><!-- /.keyword_wrapper__col -->
+                  </div><!-- /.keyword_wrapper-row -->
+                </div><!-- /.keyword_wrapper -->
+
+              </td>
+            </tr>
+
+            <tr class="children" style="background-color: #fff;">
+              <td colspan="9" style="border-color: transparent;">
+                <table class="table table-no-hover" style="border-color: transparent;">
+                  <thead>
+                    <tr>
+                      <th width="300" rowspan="2">Дата</th>
+                      <th class="text-center" colspan="3" width="300" style="border-bottom: 0;">Контекстная реклама Яндекс</th>
+                      <th class="text-center" colspan="3" width="300" style="border-bottom: 0;">Контекстная реклама Google</th>
+                    </tr>
+                    <tr>
+                      <th class="text-center" width="100"><span class="table_name-help">Показы</span></th>
+                      <th class="text-center" width="100"><span class="table_name-help">Клики</span></th>
+                      <th class="text-center" width="100"><span class="table_name-help">Кликабельность</span></th>
+                      <th class="text-center" width="100"><span class="table_name-help">Показы</span></th>
+                      <th class="text-center" width="100"><span class="table_name-help">Клики</span></th>
+                      <th class="text-center" width="100"><span class="table_name-help">Кликабельность</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>13 июня 2017</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57%</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57%</td>
+                    </tr>
+                    <tr>
+                      <td>13 июня 2017</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57%</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57%</td>
+                    </tr>
+                    <tr>
+                      <td>13 июня 2017</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57%</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57</td>
+                      <td class="text-center">57%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+
+            <!--  -->
+
+            <tbody class="open">
+            <tr class="parent">
+              <td>
+                <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Бизнес идеи</span>
+                <span class="table_name-help">seopult.ru/job</span>
+              </td>
+              <td class="text-right">15</td>
+              <td class="text-right">15</td>
+              <td class="text-right balance">35 715</td>
+              <td class="text-right balance">5 551</td>
+              <td class="text-right">10 241</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling"></i></span>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="children">
+              <td colspan="9">
+                <div class="keyword_wrapper">
+                  <div class="keyword_wrapper_header">
+                    <div class="name-keyword-row">Отчёты по контекстной рекламе</div>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-outline btn-mini">всё время</a>
+                      <a href="#" class="btn btn-outline btn-mini">90 дней</a>
+                      <a href="#" class="btn btn-outline btn-mini btn-active">30 дней</a>
+                      <a href="#" class="btn btn-outline btn-mini">неделя</a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-outline btn-mini">28 января <span class="interval"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="21" height="7" viewBox="0 0 21 7">
+  <path d="M-0.000,3.000 L18.000,3.000 L18.000,-0.000 L21.000,3.000 L21.000,4.000 L18.000,7.000 L18.000,4.000 L-0.000,4.000 L-0.000,3.000 Z" class="f-icon arrow"/>
+</svg>
+</span> 28 февраля</a>
+                    </div>
+                  </div>
+                  <div class="keyword_wrapper-row" style="padding-left: 0;">
+                    <div class="graph-box graph-yandexs" id="graph-full"></div>
+                  </div><!-- /.keyword_wrapper-row -->
+                </div><!-- /.keyword_wrapper -->
+
+              </td>
+            </tr>
+
+            <tr class="children" style="background-color: #fff;">
+              <td colspan="9" style="border-color: transparent;">
+                <table class="table table-no-hover" style="border-color: transparent;">
+                  <thead>
+                  <th width="300">Дата</th>
+                  <th class="text-right" width="">
+                    <span class="table_name">Яндекс</span>
+                    <span class="table_name-help">Пизиции</span>
+                  </th>
+                  <th class="text-right">
+                    <span class="table_name">Google</span>
+                    <span class="table_name-help">Пизиции</span>
+                  </th>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>13 июня 2017</td>
+                    <td class="text-right">57</td>
+                    <td class="text-right">57</td>
+                  </tr>
+                  <tr>
+                    <td>13 июня 2017</td>
+                    <td class="text-right">57</td>
+                    <td class="text-right">57</td>
+                  </tr>
+                  <tr>
+                    <td>13 июня 2017</td>
+                    <td class="text-right">57</td>
+                    <td class="text-right">57</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tbody>
+
+            <!--  -->
+
+            <tbody>
+            <tr>
+              <td>
+                <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Бизнес идеи</span>
+                <span class="table_name-help">seopult.ru/job</span>
+              </td>
+              <td class="text-right dynamics-td">75<span class="dynamics red"><i class="f-ico i-dynamics red"></i>7</span></td>
+              <td class="text-right dynamics-td">3<span class="dynamics green"><i class="f-ico i-dynamics green up"></i>3</span></td>
+              <td class="text-right balance">16 469</td>
+              <td class="text-right balance">6 469</td>
+              <td class="text-right">1 890</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-recommendation orange"></i></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+            <tbody>
+            <tr>
+              <td>
+                <span class="table_icon"><i class="f-ico i-pause red"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Управление персоналом</span>
+                <span class="table_name-help">Объявление не прошло модерацию</span>
+              </td>
+              <td class="text-right">26</td>
+              <td class="text-right">18</td>
+              <td class="text-right balance">2 752</td>
+              <td class="text-right balance">423</td>
+              <td class="text-right">990</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-wrench red"></i></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+            <tbody>
+            <tr>
+              <td>
+                <span class="table_icon"><i class="f-ico i-ok-good green"></i></span>
+              </td>
+              <td>
+                <span class="table_name">Повышение квалификации</span>
+                <span class="table_name-help">seopult.ru/job</span>
+              </td>
+              <td class="text-right">89</td>
+              <td class="text-right">6</td>
+              <td class="text-right balance">18 335</td>
+              <td class="text-right balance">8 336</td>
+              <td class="text-right">1 451</td>
+              <td>
+                <div class="td-controls">
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling top"></i></span>
+                  <span class="table_icon"><i class="f-ico i-controlling"></i></span>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+
+          </table>
+
+        </div><!-- /.table-content -->
+
+      </div><!-- /.wrapper -->
+    </div><!-- /.main -->
+
+
+
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <script src="assets/scripts/highcharts-keywrds.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="cleartype" content="on"/>
+
+    <title>Настройки (развёрнутые)</title>
+
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/style-skin.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/scripts/jquery.qtip/jquery.qtip.css" />
+    <script type="text/javascript" src="assets/scripts/jquery.qtip/jquery.qtip.js"></script>
+    <script src="assets/scripts/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+    <link rel="stylesheet" href="assets/scripts/magnific-popup/magnific-popup.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/inputmask/phone-codes/phone.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').select2({
+          placeholder: 'Нужно выбрать вариант',
+          minimumResultsForSearch: Infinity,
+          width: '100%',
+          dropdownAutoWidth : true
+        });
+        moment.locale('ru');
+        $('input[name="daterange"]').daterangepicker({
+          "startDate": "09/8/2017",
+          "endDate": "10/04/2017",
+          locale: {
+            cancelLabel: 'Сбросить',
+            applyLabel: 'Применить'
+          }
+        });
+        $('a').qtip({
+          style: { classes: 'qtip-light qtip-rounded' }
+        });
+      });
+    </script>
+
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="info">
+          <a href="./" class="info__link">
+            <span><i class="f-ico i-info"></i></span>
+          </a>
+        </div>
+        <nav class="user">
+          <ul class="user-menu">
+
+            <li class="user-menu__item">
+              <a class="user-menu__link message" href="support3.html" title="Для вас есть новые сообщения и уведомления">
+                <span class="user-menu__icon"><i class="f-ico i-message"></i><span class="label">у вас есть новые уведомления</span></span>
+                <span class="user-menu__text">Техническая поддержка</span>
+              </a>
+            </li>
+
+            <li class="user-menu__item">
+              <a class="user-menu__link user" href="settings-account.html">
+                <span class="user-menu__text">moof37@yandex.ru</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="project-header">
+
+      <div class="project">
+        <div class="project-icon">
+          <img src="assets/images/getsale-icon.png" alt="">
+        </div><!-- /.project-icon -->
+        <div class="project-name" title="GetSale">
+          <span>GetSale</span>
+        </div><!-- /.project-name -->
+        <div class="project-geography" title="Москва, Московская область">
+          <span>Москва, Московская область</span>
+        </div><!-- /.project-geography -->
+      </div><!-- /.project -->
+
+      <div class="balance">
+
+        <div class="balance-project">
+          <a href="finance-statistics.html" title="Откроется финансовая статистика">
+            <div class="balance-value">
+              <span>8&nbsp;782.40&nbsp;&#8381;</span>
+            </div><!-- /.balance-value -->
+            <div class="balance-time">
+              <span>Хватит на 15 дней</span>
+            </div><!-- /.balance-time -->
+          </a>
+        </div><!-- /.balance-project -->
+        <div class="recharge">
+          <a href="pay-and-start.html" class="btn btn-outline">Пополнить счёт</a>
+        </div><!-- /.recharge -->
+      </div><!-- /.balance -->
+
+    </div><!-- /.project-header -->
+
+    <div class="project-tabs">
+
+      <ul class="project-nav">
+
+        <li class="project-nav__item ">
+          <a href="statistics.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-statistics"></i></span>
+            <span class="project-nav__text">Статистика <span class="badge badge--orange" title="Новых событий в статистике">99+</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="keywords.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-loupe"></i></span>
+            <span class="project-nav__text">Ключевые слова</span>
+          </a>
+        </li>
+
+        <li class="project-nav__item ">
+          <a href="recommendation.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-recommendation"></i></span>
+            <span class="project-nav__text">Рекомендации <span class="badge badge--orange" title="Новых рекомендаций для ваших кампаний">9</span></span>
+          </a>
+        </li>
+
+        <li class="project-nav__item project-nav__item--active">
+          <a href="settings-full.html" class="project-nav__link">
+            <span class="project-nav__icon"><i class="f-ico i-settings"></i></span>
+            <span class="project-nav__text">Настройки</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div><!-- /.project-tabs -->
+
+    <div class="main">
+      <div class="wrapper">
+        <div class="content">
+          <h2>Настройки работы системы</h2>
+        </div><!-- /.content -->
+        <div class="settings-list">
+          <div class="foldable">
+
+            <div class="foldable__item">
+              <div class="foldable-box foldable-box--expand">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Стратегия привлечения посетителей</span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content">
+                  <div class="row">
+                    <div class="col-xs">
+
+                      <div class="type-select">
+                        <div class="type-select__che">
+                          <div class="form-check">
+                            <input type="checkbox" name="group2" id="type-select1" checked>
+                            <label for="type-select1">
+                              <span class="form-check-control"></span>
+                            </label>
+                          </div>
+                        </div><!-- /.type-select__che -->
+                        <label class="type-select__description" for="type-select1">
+                          <div class="type-select__description-name">Эффективная стратегия</div>
+                          <div class="type-select__description-text">При попадании слова в ТОП 10 останавливать показы контекстных объявлений</div>
+                        </label><!-- /.type-select__description -->
+                      </div><!-- /.type-select -->
+
+                    </div><!-- /.col-xs -->
+                    <div class="col-xs">
+                      <div class="type-select">
+                        <div class="type-select__che">
+                          <div class="form-check">
+                            <input type="checkbox" name="group2" id="type-select2">
+                            <label for="type-select2">
+                              <span class="form-check-control"></span>
+                            </label>
+                          </div>
+                        </div><!-- /.type-select__che -->
+                        <label class="type-select__description" for="type-select2">
+                          <div class="type-select__description-name">Экономная стратегия</div>
+                          <div class="type-select__description-text">При попадании слова в ТОП 10 продолжать показы
+                            контекстных объявлений</div>
+                        </label><!-- /.type-select__description -->
+                      </div><!-- /.type-select -->
+                    </div>
+                  </div>
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+            <div class="foldable__item">
+              <div class="foldable-box foldable-box--expand">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Счётчики</span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content">
+
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="counter-box">
+                        <div class="counter-box__logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="180" height="32" viewBox="0 0 180 32">
+                            <defs>
+                              <style>
+                                .metrika-1 {
+                                  fill: #000;
+                                }
+
+                                .metrika-1, .metrika-2 {
+                                  fill-rule: evenodd;
+                                }
+
+                                .metrika-2 {
+                                  fill: red;
+                                }
+                              </style>
+                            </defs>
+                            <g>
+                              <path d="M27.408,8.257 L27.408,26.191 L24.542,26.191 L24.542,18.149 L20.226,18.149 L20.226,26.191 L17.323,26.191 L17.323,8.257 L20.226,8.257 L20.226,15.871 L24.542,15.871 L24.542,8.257 L27.408,8.257 ZM42.329,29.714 L39.725,29.714 L39.725,26.191 L31.687,26.191 L31.687,29.714 L29.082,29.714 L29.082,23.913 L30.236,23.913 C31.947,20.106 32.133,14.555 32.133,9.786 L32.133,8.257 L40.841,8.257 L40.841,23.913 L42.329,23.913 L42.329,29.714 ZM37.976,10.498 L34.738,10.498 L34.738,10.819 C34.738,14.590 34.552,20.106 32.989,23.913 L37.976,23.913 L37.976,10.498 ZM50.330,26.440 C46.460,26.440 44.078,23.486 44.078,17.971 C44.078,12.206 45.753,8.007 49.735,8.007 C52.860,8.007 54.907,10.249 54.907,16.334 L54.907,17.864 L47.092,17.864 C47.092,21.921 48.283,24.056 50.590,24.056 C52.228,24.056 53.530,23.344 54.274,22.846 L54.944,24.981 C53.753,25.871 52.190,26.440 50.330,26.440 ZM47.130,15.587 L51.930,15.587 C51.930,12.527 51.409,10.285 49.735,10.285 C47.948,10.285 47.316,12.384 47.130,15.587 ZM60.786,17.259 L60.786,26.191 L57.884,26.191 L57.884,8.257 L60.786,8.257 L60.786,16.548 L65.289,8.257 L68.228,8.257 L63.577,16.690 L68.898,26.191 L65.735,26.191 L60.786,17.259 ZM69.270,17.224 C69.270,11.601 71.540,8.007 75.931,8.007 C77.606,8.007 78.573,8.435 79.392,8.933 L78.982,11.566 C78.201,10.925 77.085,10.320 75.894,10.320 C73.810,10.320 72.322,12.562 72.322,17.081 C72.322,21.565 73.438,24.127 75.782,24.127 C77.196,24.127 78.276,23.593 78.945,23.024 L79.615,25.088 C78.610,25.906 77.420,26.440 75.708,26.440 C71.689,26.440 69.270,23.344 69.270,17.224 Z" class="metrika-1"/>
+                              <path d="M90.187,7.729 C89.820,6.371 89.527,5.195 89.307,3.983 L89.197,3.983 C89.270,5.231 89.307,6.554 89.307,7.877 L89.307,26.281 L87.692,26.281 L87.692,0.015 L89.820,0.015 L94.261,16.803 C94.444,17.501 94.701,18.861 94.811,19.852 L94.921,19.852 C95.068,18.861 95.362,17.464 95.545,16.803 L100.023,0.015 L102.079,0.015 L102.079,26.281 L100.316,26.281 L100.316,7.877 C100.316,6.627 100.390,5.306 100.463,3.983 L100.316,3.983 C100.047,5.201 99.754,6.413 99.436,7.619 L95.509,22.241 L94.077,22.241 L90.187,7.729 ZM106.692,17.315 L115.062,17.315 C115.649,10.738 113.594,7.395 110.400,7.395 C107.280,7.395 105.004,10.959 105.004,17.022 C105.004,23.084 106.802,26.649 110.730,26.649 C113.667,26.649 115.061,24.554 115.061,24.554 L114.511,23.157 C114.511,23.157 113.226,25.142 110.767,25.142 C108.088,25.142 106.766,22.387 106.692,17.315 ZM110.400,8.827 C112.273,8.827 113.741,11.032 113.447,15.956 L106.729,15.956 C106.876,11.326 108.455,8.827 110.400,8.827 ZM127.156,9.195 L127.156,7.762 L116.873,7.762 L116.873,9.195 L121.169,9.195 L121.169,26.281 L122.896,26.281 L122.896,9.196 L127.156,9.196 L127.156,9.195 ZM152.529,26.281 L154.180,26.281 L154.180,7.762 L152.675,7.762 L146.657,20.770 C146.290,21.577 145.923,22.387 145.666,23.232 L145.556,23.232 C145.629,22.423 145.703,21.615 145.703,20.624 L145.703,7.761 L144.086,7.761 L144.086,26.281 L145.555,26.281 L151.575,13.237 C151.967,12.468 152.299,11.669 152.566,10.849 L152.676,10.849 C152.585,11.691 152.536,12.537 152.529,13.384 L152.529,26.281 ZM160.009,16.691 L166.432,26.281 L168.342,26.281 L161.807,16.360 L167.900,7.762 L166.212,7.762 L160.009,16.470 L160.009,7.762 L158.283,7.762 L158.283,26.281 L160.009,26.281 L160.009,16.691 ZM137.833,23.112 C138.543,21.704 138.898,19.529 138.898,16.589 C138.898,14.139 138.593,12.240 137.980,10.893 C137.369,9.545 136.523,8.871 135.446,8.871 C135.031,8.871 134.633,8.975 134.254,9.184 C133.874,9.393 133.520,9.668 133.188,10.011 C132.858,10.354 132.558,10.752 132.290,11.205 C132.020,11.657 131.787,12.131 131.591,12.620 L131.591,22.984 C131.959,23.744 132.411,24.307 132.950,24.675 C133.488,25.042 134.174,25.225 135.006,25.225 C136.182,25.225 137.123,24.522 137.833,23.112 ZM132.970,26.126 C132.429,25.849 131.957,25.453 131.591,24.968 L131.591,31.988 L129.866,31.988 L129.866,7.732 L131.371,7.732 L131.518,10.782 C131.932,9.905 132.490,9.103 133.171,8.412 C133.855,7.713 134.712,7.364 135.741,7.364 C136.499,7.364 137.185,7.584 137.797,8.025 C138.409,8.467 138.923,9.086 139.338,9.882 C139.755,10.678 140.073,11.633 140.294,12.748 C140.514,13.863 140.624,15.095 140.624,16.443 C140.624,19.848 140.098,22.389 139.045,24.069 C137.992,25.747 136.609,26.585 134.896,26.585 C134.226,26.595 133.563,26.437 132.968,26.126 L132.970,26.126 ZM178.413,26.281 L179.991,26.281 C179.771,25.583 179.587,24.150 179.587,22.864 L179.587,12.759 C179.587,9.085 177.862,7.395 174.816,7.395 C172.722,7.395 171.181,8.314 170.447,9.269 L170.924,10.922 C171.804,9.635 173.236,8.901 174.815,8.901 C176.834,8.901 177.899,10.114 177.899,12.943 L177.899,15.258 L175.880,15.258 C171.878,15.258 169.713,17.315 169.713,21.284 C169.713,24.664 171.438,26.649 173.934,26.649 C175.769,26.649 177.092,25.546 177.972,23.782 C178.083,25.106 178.266,25.804 178.412,26.281 L178.413,26.281 ZM174.302,25.252 C172.539,25.252 171.401,23.745 171.401,21.137 C171.401,17.903 172.869,16.507 175.917,16.507 L177.899,16.507 L177.899,21.615 C177.239,23.599 176.026,25.252 174.301,25.252 L174.302,25.252 Z" class="metrika-1"/>
+                              <path d="M8.290,16.223 L3.497,26.282 L0.000,26.282 L5.265,15.526 C2.790,14.351 1.140,12.222 1.140,8.294 C1.140,2.787 4.872,0.034 9.312,0.034 L13.830,0.034 L13.830,26.282 L10.805,26.282 L10.805,16.223 L8.290,16.223 ZM10.805,2.420 L9.194,2.420 C6.758,2.420 4.401,3.925 4.401,8.294 C4.401,12.515 6.562,13.874 9.194,13.874 L10.805,13.874 L10.805,2.420 Z" class="metrika-2"/>
+                            </g>
+                          </svg>
+
+                        </div><!-- /.counter-box__logo -->
+                        <div class="counter-box__btn">
+                          <a href="#" class="btn btn-outline disabled">Подключено</a>
+                          <a href="#" class="close-link"><span class="close_icon" aria-hidden="true"><i class="f-ico i-close dark"></i></span> Отключить</a>
+                        </div><!-- /.counter-box__btn -->
+                      </div><!-- /.counter-box -->
+                    </div>
+                    <div class="col-xs">
+                      <div class="counter-box">
+                        <div class="counter-box__logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="197.531" height="29.5" viewBox="0 0 197.531 29.5">
+                            <defs>
+                              <style>
+                                .googleanalytics-1 {
+                                  fill: #63666a;
+                                }
+
+                                .googleanalytics-1, .googleanalytics-2, .googleanalytics-3, .googleanalytics-4, .googleanalytics-5, .googleanalytics-6 {
+                                  fill-rule: evenodd;
+                                }
+
+                                .googleanalytics-2 {
+                                  fill: #ea4335;
+                                }
+
+                                .googleanalytics-3 {
+                                  fill: #34a853;
+                                }
+
+                                .googleanalytics-4 {
+                                  fill: #4285f4;
+                                }
+
+                                .googleanalytics-5 {
+                                  fill: #fbbd09;
+                                }
+
+                                .googleanalytics-6 {
+                                  fill: #ea453a;
+                                }
+                              </style>
+                            </defs>
+                            <g>
+                              <path d="M192.830,9.579 C191.661,9.579 190.734,9.772 190.048,10.159 C189.362,10.546 189.020,11.082 189.020,11.767 C189.020,12.515 189.285,13.112 189.817,13.560 C190.349,14.009 191.388,14.510 192.935,15.063 C194.227,15.529 195.168,15.949 195.757,16.322 C196.345,16.696 196.787,17.120 197.082,17.595 C197.376,18.069 197.523,18.627 197.523,19.269 C197.523,20.552 197.035,21.539 196.060,22.229 C195.084,22.919 193.700,23.263 191.907,23.263 C189.991,23.263 188.470,22.969 187.345,22.380 L187.345,20.970 C188.787,21.690 190.307,22.051 191.907,22.051 C193.322,22.051 194.396,21.816 195.130,21.345 C195.864,20.875 196.231,20.249 196.231,19.467 C196.231,18.746 195.939,18.140 195.355,17.647 C194.770,17.155 193.810,16.672 192.474,16.197 C191.041,15.679 190.035,15.233 189.455,14.859 C188.875,14.485 188.437,14.064 188.143,13.593 C187.848,13.123 187.701,12.550 187.701,11.873 C187.701,10.801 188.152,9.953 189.053,9.328 C189.954,8.705 191.213,8.393 192.830,8.393 C194.377,8.393 195.844,8.682 197.233,9.262 L196.745,10.449 C195.339,9.869 194.034,9.579 192.830,9.579 ZM181.703,9.579 C179.945,9.579 178.613,10.122 177.708,11.207 C176.803,12.293 176.350,13.855 176.350,15.894 C176.350,17.828 176.803,19.342 177.708,20.436 C178.613,21.530 179.879,22.077 181.505,22.077 C182.806,22.077 184.014,21.844 185.131,21.378 L185.131,22.591 C184.216,23.040 183.017,23.263 181.531,23.263 C179.484,23.263 177.880,22.617 176.720,21.326 C175.559,20.033 174.979,18.232 174.979,15.920 C174.979,13.547 175.581,11.699 176.785,10.377 C177.989,9.054 179.637,8.393 181.729,8.393 C182.969,8.393 184.155,8.608 185.289,9.039 L184.933,10.199 C183.694,9.785 182.617,9.579 181.703,9.579 ZM170.352,5.967 C169.798,5.967 169.521,5.540 169.521,4.688 C169.521,3.844 169.798,3.422 170.352,3.422 C170.624,3.422 170.837,3.532 170.991,3.752 C171.145,3.972 171.222,4.284 171.222,4.688 C171.222,5.083 171.145,5.396 170.991,5.624 C170.837,5.853 170.624,5.967 170.352,5.967 ZM164.419,23.263 C163.154,23.263 162.220,22.925 161.618,22.248 C161.016,21.572 160.715,20.508 160.715,19.058 L160.715,9.803 L158.592,9.803 L158.592,9.039 L160.715,8.445 L161.374,5.202 L162.046,5.202 L162.046,8.669 L166.252,8.669 L166.252,9.803 L162.046,9.803 L162.046,18.873 C162.046,19.972 162.239,20.785 162.626,21.312 C163.013,21.840 163.619,22.103 164.446,22.103 C165.272,22.103 165.992,22.033 166.608,21.892 L166.608,22.947 C165.975,23.158 165.245,23.263 164.419,23.263 ZM150.537,28.062 C150.185,28.537 149.774,28.893 149.304,29.130 C148.834,29.368 148.265,29.486 147.597,29.486 C147.096,29.486 146.538,29.394 145.923,29.209 L145.923,28.076 C146.432,28.216 146.982,28.286 147.571,28.286 C148.019,28.286 148.414,28.181 148.757,27.970 C149.100,27.759 149.410,27.432 149.687,26.988 C149.963,26.544 150.284,25.841 150.649,24.879 C151.014,23.916 151.249,23.290 151.354,23.000 L145.870,8.669 L147.215,8.669 L150.247,16.711 C151.170,19.181 151.754,20.847 152.000,21.708 L152.079,21.708 C152.448,20.574 153.050,18.882 153.886,16.632 L156.918,8.669 L158.262,8.669 L151.842,25.320 C151.323,26.674 150.888,27.588 150.537,28.062 ZM142.165,2.486 L143.470,2.486 L143.470,23.000 L142.165,23.000 L142.165,2.486 ZM136.233,20.732 L136.127,20.732 C135.406,21.655 134.666,22.308 133.906,22.690 C133.145,23.072 132.247,23.263 131.210,23.263 C129.803,23.263 128.709,22.903 127.927,22.183 C127.145,21.462 126.754,20.464 126.754,19.190 C126.754,17.792 127.336,16.707 128.500,15.933 C129.665,15.160 131.350,14.751 133.556,14.707 L136.285,14.628 L136.285,13.679 C136.285,12.317 136.009,11.289 135.455,10.594 C134.901,9.900 134.009,9.553 132.779,9.553 C131.451,9.553 130.076,9.922 128.652,10.660 L128.164,9.526 C129.738,8.788 131.293,8.419 132.831,8.419 C134.405,8.419 135.580,8.828 136.358,9.645 C137.136,10.462 137.525,11.737 137.525,13.468 L137.525,23.000 L136.562,23.000 L136.233,20.732 ZM136.233,15.709 L133.728,15.815 C131.715,15.912 130.280,16.226 129.423,16.757 C128.566,17.289 128.138,18.118 128.138,19.242 C128.138,20.139 128.413,20.836 128.962,21.332 C129.511,21.829 130.287,22.077 131.289,22.077 C132.818,22.077 134.024,21.640 134.908,20.765 C135.791,19.891 136.233,18.676 136.233,17.120 L136.233,15.709 ZM121.928,13.705 C121.928,12.264 121.625,11.216 121.019,10.561 C120.412,9.906 119.472,9.579 118.197,9.579 C116.484,9.579 115.229,10.012 114.434,10.878 C113.638,11.743 113.240,13.147 113.240,15.090 L113.240,23.000 L111.935,23.000 L111.935,8.669 L113.043,8.669 L113.293,10.634 L113.372,10.634 C114.304,9.140 115.961,8.393 118.342,8.393 C121.594,8.393 123.220,10.137 123.220,13.626 L123.220,23.000 L121.928,23.000 L121.928,13.705 ZM105.344,16.197 L97.512,16.197 L94.823,23.000 L93.333,23.000 L101.085,3.646 L101.942,3.646 L109.536,23.000 L108.020,23.000 L105.344,16.197 ZM102.272,8.037 C102.052,7.492 101.788,6.736 101.481,5.769 C101.243,6.613 100.984,7.377 100.703,8.063 L98.000,14.984 L104.895,14.984 L102.272,8.037 ZM171.011,23.000 L169.706,23.000 L169.706,8.669 L171.011,8.669 L171.011,23.000 Z" class="googleanalytics-1"/>
+                              <path d="M81.998,19.242 C80.422,19.242 79.306,18.531 78.578,17.121 L88.000,13.255 L87.685,12.460 C87.103,10.894 85.308,8.003 81.658,8.003 C78.033,8.003 75.013,10.834 75.013,15.001 C75.013,18.928 77.996,22.000 81.998,22.000 C85.223,22.000 87.091,20.036 87.867,18.904 L85.466,17.314 C84.666,18.471 83.574,19.242 81.998,19.242 L81.998,19.242 ZM81.780,10.629 C83.029,10.629 84.096,11.267 84.447,12.171 L78.081,14.785 C78.081,11.845 80.179,10.629 81.780,10.629 Z" class="googleanalytics-2"/>
+                              <path d="M70.002,0.006 L72.993,0.006 L72.993,22.000 L70.002,22.000 L70.002,0.006 Z" class="googleanalytics-3"/>
+                              <path d="M65.143,9.550 L65.036,9.550 C64.363,8.741 63.064,8.003 61.422,8.003 C57.997,8.003 55.009,11.014 55.009,14.917 C55.009,18.797 57.997,21.832 61.422,21.832 C63.064,21.832 64.363,21.094 65.036,20.261 L65.143,20.261 L65.143,21.225 C65.143,23.867 63.737,25.283 61.481,25.283 C59.638,25.283 58.493,23.950 58.020,22.820 L55.398,23.915 C56.154,25.747 58.150,27.997 61.481,27.997 C65.013,27.997 68.001,25.902 68.001,20.797 L68.001,8.360 L65.143,8.360 L65.143,9.550 ZM61.682,19.107 C59.603,19.107 58.020,17.321 58.020,14.917 C58.020,12.478 59.603,10.728 61.682,10.728 C63.737,10.728 65.343,12.513 65.343,14.941 C65.355,17.357 63.737,19.107 61.682,19.107 Z" class="googleanalytics-4"/>
+                              <path d="M46.004,8.003 C42.148,8.003 39.001,10.942 39.001,15.001 C39.001,19.025 42.148,22.000 46.004,22.000 C49.859,22.000 53.006,19.037 53.006,15.001 C53.006,10.942 49.859,8.003 46.004,8.003 ZM46.004,19.242 C43.890,19.242 42.064,17.495 42.064,15.001 C42.064,12.484 43.890,10.761 46.004,10.761 C48.118,10.761 49.943,12.484 49.943,15.001 C49.943,17.495 48.118,19.242 46.004,19.242 Z" class="googleanalytics-5"/>
+                              <path d="M30.010,8.003 C26.154,8.003 23.007,10.942 23.007,15.001 C23.007,19.025 26.154,22.000 30.010,22.000 C33.866,22.000 37.013,19.037 37.013,15.001 C37.013,10.942 33.866,8.003 30.010,8.003 ZM30.010,19.242 C27.896,19.242 26.070,17.495 26.070,15.001 C26.070,12.484 27.896,10.761 30.010,10.761 C32.124,10.761 33.950,12.484 33.950,15.001 C33.950,17.495 32.124,19.242 30.010,19.242 Z" class="googleanalytics-6"/>
+                              <path d="M10.926,10.013 L10.926,13.022 L17.962,13.022 C17.747,14.710 17.197,15.946 16.359,16.814 C15.330,17.866 13.726,19.016 10.926,19.016 C6.594,19.016 3.207,15.444 3.207,11.016 C3.207,6.588 6.594,3.016 10.926,3.016 C13.259,3.016 14.971,3.958 16.227,5.169 L18.297,3.053 C16.550,1.316 14.205,-0.005 10.926,-0.005 C4.990,-0.005 -0.000,4.936 -0.000,11.004 C-0.000,17.071 4.990,22.013 10.926,22.013 C14.133,22.013 16.550,20.936 18.441,18.930 C20.380,16.948 20.990,14.147 20.990,11.897 C20.990,11.199 20.942,10.551 20.834,10.013 L10.926,10.013 Z" class="googleanalytics-4"/>
+                            </g>
+                          </svg>
+
+                        </div><!-- /.counter-box__logo -->
+                        <div class="counter-box__btn">
+                          <a href="#" class="btn btn-outline">Подключить</a>
+                        </div><!-- /.counter-box__btn -->
+                      </div><!-- /.counter-box -->
+                    </div>
+                  </div>
+
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+            <div class="foldable__item">
+              <div class="foldable-box">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Регион продвижения</span>
+                    <span class="foldable-name__help-text">Республика Мордовия</span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content">
+
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+            <div class="foldable__item">
+              <div class="foldable-box foldable-box--expand">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Расписание показа контекстной рекламы</span>
+                    <span class="foldable-name__help-text">Пользовательская настройка</span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content">
+
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="form-group">
+                        <label for="info-time-zone">Часовой пояс</label>
+
+                        <div class="select select-support-subject">
+                          <select id="info-time-zone" class="form-control">
+                            <option value="-12.0"> (GMT -12:00) Эниветок, Кваджалейн </option>
+                            <option value="-11.0"> (GMT -11:00) Остров Мидуэй, Самоа </option>
+                            <option value="-10.0"> (GMT -10:00) Гавайи </option>
+                            <option value="-9.0"> (GMT -9:00) Аляска </option>
+                            <option value="-8.0"> (GMT -8:00) Тихоокеанское время (США и Канада) </option>
+                            <option value="-7.0"> (GMT -7:00) Горное время (США и Канада) </option>
+                            <option value="-6.0"> (GMT -6:00) Центральное время (США и Канада), Мехико</option>
+                            <option value="-5.0"> (GMT -5:00) Восточное время (США и Канада), Богота, Лима </option>
+                            <option value="-4.0"> (GMT -4:00) Атлантическое время (Канада), Каракас, Ла-Пас </option>
+                            <option value="-3.5"> (GMT -3:30) Ньюфаундленд </option>
+                            <option value="-3.0"> (GMT -3:00) Бразилия, Буэнос-Айрес, Джорджтаун </option>
+                            <option value="-2.0"> (GMT -2:00) Срединно-Атлантического </option>
+                            <option value="-1.0"> (GMT -1:00 час) Азорские острова, острова Зеленого Мыса </option>
+                            <option value="0.0"> (GMT) Время Западной Европе, Лондон, Лиссабон, Касабланка </option>
+                            <option value="1.0"> (GMT +1:00 час) Брюссель, Копенгаген, Мадрид, Париж </option>
+                            <option value="2.0"> (GMT +2:00) Киев, Калининград, Южная Африка </option>
+                            <option value="3.0" selected> (GMT +3:00) Москва</option>
+                            <option value="3.5"> (GMT +3:30) Тегеран </option>
+                            <option value="4.0"> (GMT +4:00) Абу-Даби, Мускат, Баку, Тбилиси</option>
+                            <option value="4.5"> (GMT +4:30) Кабул </option>
+                            <option value="5.0"> (GMT +5:00) Екатеринбург, Исламабад, Карачи, Ташкент</option>
+                            <option value="5.5"> (GMT +5:30) Бомбей, Калькутта, Мадрас, Нью-Дели</option>
+                            <option value="5.75"> (GMT +5:45) Катманду</option>
+                            <option value="6.0"> (GMT +6:00) Алматы, Дакке, Коломбо </option>
+                            <option value="7.0"> (GMT +7:00) Бангкок, Ханой, Джакарта</option>
+                            <option value="8.0"> (GMT +8:00) Пекин, Перт, Сингапур, Гонконг</option>
+                            <option value="9.0"> (GMT +9:00) Токио, Сеул, Осака, Саппоро, Якутск</option>
+                            <option value="9.5"> (GMT +9:30) Аделаида, Дарвин </option>
+                            <option value="10.0"> (GMT +10:00) Восточная Австралия, Гуам, Владивосток </option>
+                            <option value="11.0"> (GMT +11:00) Магадан, Соломоновы острова, Новая Каледония</option>
+                            <option value="12.0"> (GMT +12:00) Окленд, Веллингтон, Фиджи, Камчатка</option>
+                          </select>
+                        </div><!-- /.select -->
+
+                      </div><!-- /.form-group -->
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="form-group">
+                        <div class="form-line">
+                          <!--<div class="btn-group">
+                            <a href="#" class="btn btn-outline btn-mini">Круглосуточно, вся неделя</a>
+                            <a href="#" class="btn btn-outline btn-mini btn-active">Рабочие часы в будние дни</a>
+                            <a href="#" class="btn btn-outline btn-mini">Будние дни, круглосуточно</a>
+                          </div>-->
+                          <div class="pseudo-links">
+                            <a href="#" class="pseudo">Круглосуточно, вся неделя</a>
+                            <a href="#" class="pseudo">Рабочие часы в будние дни</a>
+                            <a href="#" class="pseudo">Будние дни, круглосуточно</a>
+                            <a href="#" class="pseudo">Свой вариант</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="times-wrapper">
+                        <table class="table checkbox-zone">
+                          <thead>
+                            <tr>
+                            <th></th>
+                            <th><span>00</span></th>
+                            <th><span>01</span></th>
+                            <th><span>02</span></th>
+                            <th><span>03</span></th>
+                            <th><span>04</span></th>
+                            <th><span>05</span></th>
+                            <th><span>06</span></th>
+                            <th><span>07</span></th>
+                            <th><span>08</span></th>
+                            <th><span>09</span></th>
+                            <th><span>10</span></th>
+                            <th><span>11</span></th>
+                            <th><span>12</span></th>
+                            <th><span>13</span></th>
+                            <th><span>14</span></th>
+                            <th><span>15</span></th>
+                            <th><span>16</span></th>
+                            <th><span>17</span></th>
+                            <th><span>18</span></th>
+                            <th><span>19</span></th>
+                            <th><span>20</span></th>
+                            <th><span>21</span></th>
+                            <th><span>22</span></th>
+                            <th><span>23</span></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th><span>пн</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td class="td-select">08</td>
+                              <td class="td-select">09</td>
+                              <td class="td-select">10</td>
+                              <td class="td-select">11</td>
+                              <td class="td-select">12</td>
+                              <td class="td-select">13</td>
+                              <td class="td-select">14</td>
+                              <td class="td-select">15</td>
+                              <td class="td-select">16</td>
+                              <td class="td-select">17</td>
+                              <td class="td-select">18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+                            <tr>
+                              <th><span>вт</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+                            <tr>
+                              <th><span>ср</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td class="td-select">08</td>
+                              <td class="td-select">09</td>
+                              <td class="td-select">10</td>
+                              <td class="td-select">11</td>
+                              <td class="td-select">12</td>
+                              <td class="td-select">13</td>
+                              <td class="td-select">14</td>
+                              <td class="td-select">15</td>
+                              <td class="td-select">16</td>
+                              <td class="td-select">17</td>
+                              <td class="td-select">18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+                            <tr>
+                              <th><span>чт</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td class="td-select">08</td>
+                              <td class="td-select">09</td>
+                              <td class="td-select">10</td>
+                              <td class="td-select">11</td>
+                              <td class="td-select">12</td>
+                              <td class="td-select">13</td>
+                              <td class="td-select">14</td>
+                              <td class="td-select">15</td>
+                              <td class="td-select">16</td>
+                              <td class="td-select">17</td>
+                              <td class="td-select">18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+                            <tr>
+                              <th><span>пт</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td class="td-select">08</td>
+                              <td class="td-select">09</td>
+                              <td class="td-select">10</td>
+                              <td class="td-select">11</td>
+                              <td class="td-select">12</td>
+                              <td class="td-select">13</td>
+                              <td class="td-select">14</td>
+                              <td class="td-select">15</td>
+                              <td class="td-select">16</td>
+                              <td class="td-select">17</td>
+                              <td class="td-select">18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+
+                            <tr class="empty">
+                              <th></th>
+                              <td colspan="24"></td>
+                            </tr>
+
+                            <tr>
+                              <th><span>сб</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td class="td-select">18</td>
+                              <td class="td-select">19</td>
+                              <td class="td-select">20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+                            <tr>
+                              <th><span>вс</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+
+                            <tr class="empty">
+                              <th></th>
+                              <td colspan="24"></td>
+                            </tr>
+
+                            <tr>
+                              <th title="Праздники"><span>пр</span></th>
+                              <td>01</td>
+                              <td>02</td>
+                              <td>03</td>
+                              <td>04</td>
+                              <td>05</td>
+                              <td>06</td>
+                              <td>07</td>
+                              <td>08</td>
+                              <td>09</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                              <td>21</td>
+                              <td>22</td>
+                              <td>23</td>
+                              <td>24</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input type="checkbox" name="group2" id="credit-limit">
+                          <label for="credit-limit">
+                            <span class="form-check-control">Показывать объявления в праздничные дни</span>
+                          </label>
+                        </div>
+                        <a href="" class="undo"><span class="undo-icon"><i class="f-ico i-refresh"></i></span><span class="undo-text">Сбросить изменения</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+            <div class="foldable__item">
+
+              <div class="foldable-box foldable-box--expand">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Контактные данные организации</span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content foldable__content-contact">
+
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="form-group"><label for="info-name-org">Название организации</label><input type="text" id="info-name-org" class="form-control" placeholder="Как называется ваша организация?"></div>
+                    </div>
+                    <div class="col-xs">
+                      <div class="form-group"><label for="info-country">Страна</label><input type="text" id="info-country" class="form-control" placeholder="Начните вводить название Страны"></div>
+                    </div>
+                    <div class="col-xs">
+                      <div class="form-group"><label for="info-city">Город</label><input type="text" id="info-city" class="form-control" placeholder="Начните вводить название города"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="info-street">Улица</label><input type="text" id="info-street" class="form-control" placeholder="Начните вводить адрес"></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="form-group"><label for="info-dom">Дом</label><input type="text" id="info-dom" class="form-control" placeholder="Номер дома"></div>
+                        </div>
+                        <div class="col-xs-6">
+                          <div class="form-group"><label for="info-korp">Корпус</label><input type="text" id="info-korp" class="form-control" placeholder="Обозначение корпуса"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="form-group"><label for="info-ofice">Офис</label><input type="text" id="info-ofice" class="form-control" placeholder="Номер офиса, если есть"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="form-group">
+                        <label for="info-time-job">Режим работы</label>
+                        <div class="select select-support-subject">
+                          <select id="info-time-job" class="form-control">
+                            <option value="1" selected>Понедельник</option>
+                            <option value="2">Вторник</option>
+                            <option value="3">Среда</option>
+                            <option value="4">Четверг</option>
+                            <option value="5">Пятница</option>
+                            <option value="6">Суббота</option>
+                            <option value="7">Воскресенье</option>
+                          </select>
+                        </div><!-- /.select -->
+                      </div>
+                    </div>
+                    <div class="col-xs-4" style="position: relative;">
+                      <div class="" style="position: absolute;bottom: 35px;left: -11px;"><i class="f-ico i-arrow"></i></div>
+                      <div class="form-group">
+                        <label for="" class="hidden">Конец рабочей недели</label>
+                        <div class="select select-support-subject">
+                          <select class="form-control">
+                            <option value="1">Понедельник</option>
+                            <option value="2">Вторник</option>
+                            <option value="3">Среда</option>
+                            <option value="4">Четверг</option>
+                            <option value="5" selected>Пятница</option>
+                            <option value="6">Суббота</option>
+                            <option value="7">Воскресенье</option>
+                          </select>
+                        </div><!-- /.select -->
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="" class="hidden">Время работы</label>
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <div class="select select-support-subject">
+                              <select class="form-control">
+                                <option value="0;0">00:00</option>
+                                <option value="0;15">00:15</option>
+                                <option value="0;30">00:30</option>
+                                <option value="0;45">00:45</option>
+                                <option value="1;0">01:00</option>
+                                <option value="1;15">01:15</option>
+                                <option value="1;30">01:30</option>
+                                <option value="1;45">01:45</option>
+                                <option value="2;0">02:00</option>
+                                <option value="2;15">02:15</option>
+                                <option value="2;30">02:30</option>
+                                <option value="2;45">02:45</option>
+                                <option value="3;0">03:00</option>
+                                <option value="3;15">03:15</option>
+                                <option value="3;30">03:30</option>
+                                <option value="3;45">03:45</option>
+                                <option value="4;0">04:00</option>
+                                <option value="4;15">04:15</option>
+                                <option value="4;30">04:30</option>
+                                <option value="4;45">04:45</option>
+                                <option value="5;0">05:00</option>
+                                <option value="5;15">05:15</option>
+                                <option value="5;30">05:30</option>
+                                <option value="5;45">05:45</option>
+                                <option value="6;0">06:00</option>
+                                <option value="6;15">06:15</option>
+                                <option value="6;30">06:30</option>
+                                <option value="6;45">06:45</option>
+                                <option value="7;0">07:00</option>
+                                <option value="7;15">07:15</option>
+                                <option value="7;30">07:30</option>
+                                <option value="7;45">07:45</option>
+                                <option value="8;0">08:00</option>
+                                <option value="8;15">08:15</option>
+                                <option value="8;30">08:30</option>
+                                <option value="8;45">08:45</option>
+                                <option value="9;0" selected>09:00</option>
+                                <option value="9;15">09:15</option>
+                                <option value="9;30">09:30</option>
+                                <option value="9;45">09:45</option>
+                                <option value="10;0">10:00</option>
+                                <option value="10;15">10:15</option>
+                                <option value="10;30">10:30</option>
+                                <option value="10;45">10:45</option>
+                                <option value="11;0">11:00</option>
+                                <option value="11;15">11:15</option>
+                                <option value="11;30">11:30</option>
+                                <option value="11;45">11:45</option>
+                                <option value="12;0">12:00</option>
+                                <option value="12;15">12:15</option>
+                                <option value="12;30">12:30</option>
+                                <option value="12;45">12:45</option>
+                                <option value="13;0">13:00</option>
+                                <option value="13;15">13:15</option>
+                                <option value="13;30">13:30</option>
+                                <option value="13;45">13:45</option>
+                                <option value="14;0">14:00</option>
+                                <option value="14;15">14:15</option>
+                                <option value="14;30">14:30</option>
+                                <option value="14;45">14:45</option>
+                                <option value="15;0">15:00</option>
+                                <option value="15;15">15:15</option>
+                                <option value="15;30">15:30</option>
+                                <option value="15;45">15:45</option>
+                                <option value="16;0">16:00</option>
+                                <option value="16;15">16:15</option>
+                                <option value="16;30">16:30</option>
+                                <option value="16;45">16:45</option>
+                                <option value="17;0">17:00</option>
+                                <option value="17;15">17:15</option>
+                                <option value="17;30">17:30</option>
+                                <option value="17;45">17:45</option>
+                                <option value="18;0">18:00</option>
+                                <option value="18;15">18:15</option>
+                                <option value="18;30">18:30</option>
+                                <option value="18;45">18:45</option>
+                                <option value="19;0">19:00</option>
+                                <option value="19;15">19:15</option>
+                                <option value="19;30">19:30</option>
+                                <option value="19;45">19:45</option>
+                                <option value="20;0">20:00</option>
+                                <option value="20;15">20:15</option>
+                                <option value="20;30">20:30</option>
+                                <option value="20;45">20:45</option>
+                                <option value="21;0">21:00</option>
+                                <option value="21;15">21:15</option>
+                                <option value="21;30">21:30</option>
+                                <option value="21;45">21:45</option>
+                                <option value="22;0">22:00</option>
+                                <option value="22;15">22:15</option>
+                                <option value="22;30">22:30</option>
+                                <option value="22;45">22:45</option>
+                                <option value="23;0">23:00</option>
+                                <option value="23;15">23:15</option>
+                                <option value="23;30">23:30</option>
+                                <option value="23;45">23:45</option>
+                              </select>
+                            </div><!-- /.select -->
+                          </div>
+                          <div class="col-xs-6" style="position: relative;">
+                            <div class="" style="position: absolute;bottom: 35px;left: -11px;"><i class="f-ico i-arrow"></i></div>
+                            <div class="select select-support-subject">
+                              <select class="form-control">
+                                <option value="0;0">00:00</option>
+                                <option value="0;15">00:15</option>
+                                <option value="0;30">00:30</option>
+                                <option value="0;45">00:45</option>
+                                <option value="1;0">01:00</option>
+                                <option value="1;15">01:15</option>
+                                <option value="1;30">01:30</option>
+                                <option value="1;45">01:45</option>
+                                <option value="2;0">02:00</option>
+                                <option value="2;15">02:15</option>
+                                <option value="2;30">02:30</option>
+                                <option value="2;45">02:45</option>
+                                <option value="3;0">03:00</option>
+                                <option value="3;15">03:15</option>
+                                <option value="3;30">03:30</option>
+                                <option value="3;45">03:45</option>
+                                <option value="4;0">04:00</option>
+                                <option value="4;15">04:15</option>
+                                <option value="4;30">04:30</option>
+                                <option value="4;45">04:45</option>
+                                <option value="5;0">05:00</option>
+                                <option value="5;15">05:15</option>
+                                <option value="5;30">05:30</option>
+                                <option value="5;45">05:45</option>
+                                <option value="6;0">06:00</option>
+                                <option value="6;15">06:15</option>
+                                <option value="6;30">06:30</option>
+                                <option value="6;45">06:45</option>
+                                <option value="7;0">07:00</option>
+                                <option value="7;15">07:15</option>
+                                <option value="7;30">07:30</option>
+                                <option value="7;45">07:45</option>
+                                <option value="8;0">08:00</option>
+                                <option value="8;15">08:15</option>
+                                <option value="8;30">08:30</option>
+                                <option value="8;45">08:45</option>
+                                <option value="9;0">09:00</option>
+                                <option value="9;15">09:15</option>
+                                <option value="9;30">09:30</option>
+                                <option value="9;45">09:45</option>
+                                <option value="10;0">10:00</option>
+                                <option value="10;15">10:15</option>
+                                <option value="10;30">10:30</option>
+                                <option value="10;45">10:45</option>
+                                <option value="11;0">11:00</option>
+                                <option value="11;15">11:15</option>
+                                <option value="11;30">11:30</option>
+                                <option value="11;45">11:45</option>
+                                <option value="12;0">12:00</option>
+                                <option value="12;15">12:15</option>
+                                <option value="12;30">12:30</option>
+                                <option value="12;45">12:45</option>
+                                <option value="13;0">13:00</option>
+                                <option value="13;15">13:15</option>
+                                <option value="13;30">13:30</option>
+                                <option value="13;45">13:45</option>
+                                <option value="14;0">14:00</option>
+                                <option value="14;15">14:15</option>
+                                <option value="14;30">14:30</option>
+                                <option value="14;45">14:45</option>
+                                <option value="15;0">15:00</option>
+                                <option value="15;15">15:15</option>
+                                <option value="15;30">15:30</option>
+                                <option value="15;45">15:45</option>
+                                <option value="16;0">16:00</option>
+                                <option value="16;15">16:15</option>
+                                <option value="16;30">16:30</option>
+                                <option value="16;45">16:45</option>
+                                <option value="17;0">17:00</option>
+                                <option value="17;15">17:15</option>
+                                <option value="17;30">17:30</option>
+                                <option value="17;45">17:45</option>
+                                <option value="18;0">18:00</option>
+                                <option value="18;15">18:15</option>
+                                <option value="18;30">18:30</option>
+                                <option value="18;45" selected>18:45</option>
+                                <option value="19;0">19:00</option>
+                                <option value="19;15">19:15</option>
+                                <option value="19;30">19:30</option>
+                                <option value="19;45">19:45</option>
+                                <option value="20;0">20:00</option>
+                                <option value="20;15">20:15</option>
+                                <option value="20;30">20:30</option>
+                                <option value="20;45">20:45</option>
+                                <option value="21;0">21:00</option>
+                                <option value="21;15">21:15</option>
+                                <option value="21;30">21:30</option>
+                                <option value="21;45">21:45</option>
+                                <option value="22;0">22:00</option>
+                                <option value="22;15">22:15</option>
+                                <option value="22;30">22:30</option>
+                                <option value="22;45">22:45</option>
+                                <option value="23;0">23:00</option>
+                                <option value="23;15">23:15</option>
+                                <option value="23;30">23:30</option>
+                                <option value="23;45">23:45</option>
+                              </select>
+                            </div>
+                          </div><!-- /.select -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="info-tel">Телефон</label>
+                        <div class="form-group-box">
+                          <input type="text" class="form-control" placeholder="+7">
+                          <input type="text" class="form-control" placeholder="код города">
+                          <input type="text" class="form-control" placeholder="телефон" id="info-tel">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="info-mail">Email</label><input type="text" id="info-mail" class="form-control" placeholder="Адрес эл. почты"></div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="">Интернет пейджер</label>
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <div class="select select-support-subject">
+                              <select class="form-control">
+                                <option value="1" disabled selected>Нужно выбрать</option>
+                                <option value="2">ICQ</option>
+                                <option value="3">Jabber/GTalk</option>
+                                <option value="4">Skype</option>
+                                <option value="5">Mail.ru Агент</option>
+                                <option value="7">Viber</option>
+                                <option value="8">Telegram</option>
+                                <option value="9">WhatsApp</option>
+                                <option value="9">Сова или голуби</option>
+                              </select>
+                            </div><!-- /.select -->
+                          </div>
+                          <div class="col-xs-6">
+                            <input type="text" class="form-control" placeholder="Логин, номер или почта">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="form-group form-group--border">
+                        <label for="info-message">Подробнее о товаре или услуге</label>
+                        <textarea id="info-message" class="form-control" rows="3" placeholder="Ваше сообщение"></textarea>
+                      </div><!-- /.form-group -->
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="ogrnogrnip" title="ОГРН (для юр.лиц) и ОГРНИП (для индивидуальных предпринимателей) — Основной государственный регистрационный номер">ОГРН или ОГРНИП</label><input type="text" class="form-control" placeholder="13 цифр" id="ogrnogrnip"></div>
+                    </div>
+                  </div>
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+            <div class="foldable__item">
+              <div class="foldable-box foldable-box--expand">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Лицензии и сертификаты на товары и услуги</span>
+                    <span class="foldable-name__help-text">
+                      <span class="help-link__icon"><i class="f-ico i-info-small"></i></span>
+                      <span class="help-link__text">Только для ведения контекста в определенных <a href="#">тематиках</a>.</span>
+                    </span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content">
+
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="form-actions">
+                        <button type="submit" class="btn btn-outline">Загрузить фаил</button>
+                        <div class="form-inline">
+                          <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} файла будет загружено" multiple />
+                          <label for="file-3">
+                            <span class="attach-icon"><i class="f-ico i-attach"></i></span>
+                            <span>Прикрепить фаил&hellip;</span>
+                          </label>
+                        </div><!-- /.form-inline -->
+                      </div><!-- /.form-actions -->
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!--<div class="col-xs">
+                      <div class="form-group"><label for="docs-name">Название</label><input type="text" id="docs-name" class="form-control" placeholder="Например: лицензия на всё золото в мире"></div>
+                    </div>-->
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="docs-type">Тип документа</label>
+                        <div class="select select-support-subject">
+                          <select class="form-control" id="docs-type">
+                            <option value="1" disabled selected>Выберите из списка</option>
+                            <option value="2">Документ с цветочками</option>
+                            <option value="3">Документ с круголой печатью</option>
+                            <option value="4">Документ с квадратной печатью</option>
+                            <option value="5">Документ с треугольной печатью</option>
+                          </select>
+                        </div><!-- /.select -->
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="form-group"><label for="docs-end">Окончание действия</label><input type="text" id="docs-end" class="form-control" placeholder="Полная дата: день, месяц и год"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs">
+                      <div class="form-actions">
+                        <button class="btn btn-blue disabled">Добавить</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="docs">
+                    <div class="docs__item">
+                      <div class="docs-box">
+                        <div class="docs-preview">
+                          <div class="docs-preview-box"></div>
+                        </div><!-- /.docs-preview -->
+                        <div class="docs-description">
+                          <div class="docs-status docs-status-moderate">На модерации</div>
+                          <div class="docs-status docs-status-ok">Одобрено</div>
+                          <div class="docs-status">Документ в работе</div>
+                          <div class="docs-what">
+                            <div class="docs-what_title">Тип документа</div>
+                            <div class="docs-what_name">Сертификат</div>
+                          </div>
+                          <div class="docs-what">
+                            <div class="docs-what_title">Действителен до</div>
+                            <div class="docs-what_name">15 марта 2019</div>
+                          </div>
+                        </div><!-- /.docs-description -->
+                        <div class="remove">
+                          <div class="close" title="Удалить документ?">
+                            <span class="close_icon" aria-hidden="true"><i class="f-ico i-close dark"></i></span>
+                          </div><!-- /.close -->
+                        </div><!-- /.remove -->
+                      </div><!-- /.docs-box -->
+                    </div><!-- /.docs__item -->
+                  </div><!-- /.docs -->
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+            <div class="foldable__item">
+              <div class="foldable-box foldable-box--expand">
+                <div class="foldable__header">
+                  <div class="foldable-name">
+                    <span>Дополнительные настройки</span>
+                    <span class="foldable-name__help-text"></span>
+                  </div><!-- /.foldable-name -->
+                  <div class="foldable-status">
+                    <span><i class="f-ico i-chevron"></i></span>
+                  </div><!-- /.foldable-status -->
+                </div><!-- /.foldable__header -->
+                <div class="foldable__content">
+
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input type="checkbox" name="group2" id="exact-phrase" checked>
+                      <label for="exact-phrase">
+                        <span class="form-check-control">Использовать &laquo;Точные фразы&raquo; для контекстной рекламы</span>
+                      </label>
+                    </div>
+                  </div><!-- /.form-group -->
+
+                  <div class="form-group">
+                    <label for="credit-limit">Коррекция расходов</label>
+                    <div class="form-line">
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-outline">Не реагировать</a>
+                        <a href="#" class="btn btn-outline btn-active">Моментально</a>
+                        <a href="#" class="btn btn-outline">Плавно</a>
+                      </div>
+                    </div>
+                  </div><!-- /.form-group -->
+
+                  <div class="form-group">
+                    <label for="">Текст анкоров</label>
+
+                    <div class="form-check">
+                      <input type="checkbox" name="group2" id="recommendation" checked>
+                      <label for="recommendation">
+                        <span class="form-check-control">Генерировать варианты с использованием окружающего текста</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" name="group2" id="critical-notice">
+                      <label for="critical-notice">
+                        <span class="form-check-control">В точности повторять ключевое слово</span>
+                      </label>
+                    </div>
+                  </div>
+
+                </div><!-- /.foldable__content -->
+              </div><!-- /.foldable-box -->
+            </div><!-- /.foldable__item -->
+
+          </div><!-- /.foldable -->
+        </div><!-- /.settings-list -->
+      </div><!-- /.wrapper -->
+    </div><!-- /.main -->
+
+
+  </body>
+</html>
